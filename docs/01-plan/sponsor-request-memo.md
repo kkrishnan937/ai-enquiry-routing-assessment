@@ -1,48 +1,52 @@
-# Sponsor request: municipal enquiry handling
+# Sponsor request: review of municipal enquiry handling
 
 **Status:** Draft  
-**From:** Manager, Customer Service (sponsor)  
+**From:** Customer Service Manager  
 **To:** Business Analyst  
-**Subject:** Investigate how enquiries reach the responsible municipal team
+**Subject:** Investigate opportunities to improve enquiry referrals and response times
+
+## Background
+
+Saskatoon's published customer-service report and survey results provide a reason to examine how residents' enquiries are handled. The October 2025 report cites concerns about customer-service priorities and describes an ongoing CRM rollout. The separately published 2025 survey records mostly positive experiences, alongside opportunities to improve response times, access to staff, and referrals.
+
+The [evidence review](evidence-review.md) records the source findings and their limitations. These sources do not establish that incorrect routing is a frequent problem or the cause of delayed responses.
 
 ## Request
 
-Please investigate how our customer-service team receives general enquiries and passes them to the municipal team responsible for responding. Focus initially on roads, waste collection, water services, and recreation.
+Investigate the following question:
 
-I need a recommendation on what we should improve first and the evidence we would need before committing to a change. Please consider changes to working procedures and reference information as well as software assistance. Do not assume that purchasing or building a system is the answer.
+**What changes to enquiry handling could help staff provide accurate referrals and timely responses?**
 
-## Concern raised
+Establish how enquiries are received, answered, and referred to the responsible service team. Identify where further evidence is needed before recommending a change. Consider improvements to procedures, service information, staff guidance, and existing systems alongside any proposed software assistance.
 
-The following concerns need investigation:
+## Initial boundary
 
-- Staff sometimes need to ask colleagues which team owns an enquiry.
-- A receiving team sometimes returns an enquiry or forwards it elsewhere because it falls outside its responsibilities.
-- Residents may need to repeat information when an enquiry changes hands.
+For the portfolio investigation, begin with general email and web-form enquiries about roads, waste collection, water services, and recreation. This is a proposed study boundary, not a finding about the City's service structure.
 
-We do not yet know how frequently these situations occur, which service areas are most affected, or how much delay they cause. We also need to establish whether the cause is unclear responsibilities, missing information, inconsistent guidance, or something else.
+Review the steps from receipt through either an answer at first contact or acceptance by the responsible service team. Detailed service delivery after acceptance is outside this initial review. Confirm the actual team responsibilities, channel coverage, and system capabilities before drawing conclusions about the process.
 
-## Investigation boundary
+Emergency response, eligibility decisions, and automatic communication with residents are outside the planned prototype. Establish how staff would recognise and handle urgent matters before defining ordinary enquiry-routing examples.
 
-Start with general enquiries submitted by email or a web form and handled by customer-service staff. Establish how staff identify the service area, check that enough information is present, choose a receiving team, and deal with unclear ownership or returned enquiries.
+## Questions to investigate
 
-The initial review ends when the responsible team accepts the enquiry for follow-up. Completing road repairs, collecting waste, resolving water issues, and delivering recreation services are outside this review. Service-specific submission rules and the treatment of urgent matters still need to be established.
-
-Emergency response, eligibility decisions, and automated communication with residents are outside the planned prototype. Any urgent or potentially unsafe example encountered during analysis must be identified as requiring a defined staff procedure rather than treated as an ordinary routing example.
-
-## Questions to answer
-
-1. What happens between receipt and acceptance by the responsible team, including exceptions?
-2. What information and guidance do staff use, and where do they encounter difficulty?
-3. Which concerns can be supported by records or other evidence, and what remains uncertain?
-4. Would clearer ownership, better forms, updated guidance, or simple routing rules address the problem?
-5. If an AI-assisted option is considered, what additional benefit would justify it, what data would it need, and which decisions would remain with staff?
+1. What steps and exceptions occur between receiving an enquiry and answering or referring it?
+2. What information do staff need to identify the appropriate service and provide a useful response?
+3. What evidence distinguishes an incorrect assignment from a legitimate transfer?
+4. Where does time accumulate, and how are first response, acceptance, and resolution measured separately?
+5. What changes have already been introduced through the CRM rollout and related work?
+6. Could clearer guidance, revised forms, training, or existing system features address the identified need?
+7. If AI assistance is considered, what specific task would it support and what evidence would justify using it?
 
 ## Expected response
 
-Provide a documented current process, an agreed problem statement, a comparison of practical options, and a recommendation with its assumptions and limitations. Identify the baseline measures needed to evaluate an improvement, including possible reassignment frequency and time to acceptance. Do not set improvement targets until there is a defensible baseline.
+Provide a current-process description, a supported problem statement, a comparison of practical options, and a recommendation. Record evidence sources, unresolved questions, and assumptions so the recommendation can be reviewed.
 
-If a small prototype would help test an unresolved question, explain that question, the proposed test, and the decision its results would support. Any prototype proposal should be reviewed separately after the options assessment.
+Propose baseline measures and explain the records needed to calculate them. Do not set improvement targets from survey percentages or treat those percentages as operational error rates.
 
-## Decision and participation
+If a prototype would help answer a specific question, define the question, test method, and decision the results would support. Assess enquiry routing, FAQ assistance, and enquiry trend analysis without assuming that one must be selected. A procedural change or a decision to gather more evidence is also a valid outcome.
 
-The Manager, Customer Service is the sponsor and will review the problem definition and recommendation. Customer-service staff and representatives from the four service areas would be needed to validate the process and ownership boundaries. Records, privacy, and technology representatives would be consulted where an option affects their responsibilities. Actual decision rights will be defined in the stakeholder work.
+## Review and participation
+
+The Customer Service Manager will review the investigation boundary, problem statement, and recommendation within the exercise. The Customer Service Representative and relevant service representatives will provide their perspectives on the process and exceptions. The Business Systems Analyst and Records and Privacy Officer will contribute where system capabilities or information handling affect the options.
+
+Record decisions and disagreements during the discussions. Stakeholder responsibilities and decision rights will be developed in the stakeholder analysis.
