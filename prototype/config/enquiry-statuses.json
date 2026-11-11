@@ -1,0 +1,20 @@
+{
+  "environment": "local-practice",
+  "purpose": "Enquiry status behaviour exercise; not a municipal system export",
+  "version": "0.1",
+  "statuses": ["Open", "Awaiting Information", "Referred", "Accepted", "Closed"],
+  "transitions": {
+    "Open": ["Awaiting Information", "Referred"],
+    "Awaiting Information": ["Open"],
+    "Referred": ["Accepted", "Open"],
+    "Accepted": ["Closed"],
+    "Closed": []
+  },
+  "awaiting_information": {
+    "retain_named_representative": true,
+    "follow_up_date_required": true,
+    "automatic_closure": false,
+    "automatic_reassignment": false,
+    "automatic_timer": false
+  }
+}
