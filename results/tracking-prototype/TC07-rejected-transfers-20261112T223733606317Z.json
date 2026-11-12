@@ -1,0 +1,48 @@
+{
+  "executed_utc": "2026-11-12T22:37:33.606317+00:00",
+  "reference": "ENQ-94C05BDDAD83",
+  "environment": "Existing local application port 8766; authenticated HTTP sessions",
+  "application_sha256": "349d5ac4b0730a9550ec98bc5bb9191d5b8b9dc0cab72e4dda9fd7bb4d0468c8",
+  "responsible_before_and_after": "rep-c",
+  "checks": [
+    {
+      "scenario": "Supervisor omits reason",
+      "request": {
+        "representative": "rep-a",
+        "confirmed": true
+      },
+      "response_status": 400,
+      "response": {
+        "error": "Receiving representative, reason and confirmation are required"
+      },
+      "record_and_history_unchanged": true
+    },
+    {
+      "scenario": "Supervisor omits receiving confirmation",
+      "request": {
+        "representative": "rep-a",
+        "reason": "Controlled negative test"
+      },
+      "response_status": 400,
+      "response": {
+        "error": "Receiving representative, reason and confirmation are required"
+      },
+      "record_and_history_unchanged": true
+    },
+    {
+      "scenario": "Ordinary responsible representative attempts transfer",
+      "request": {
+        "representative": "rep-a",
+        "reason": "Controlled negative test",
+        "confirmed": true
+      },
+      "response_status": 403,
+      "response": {
+        "error": "Only the supervisor may change assignments"
+      },
+      "record_and_history_unchanged": true
+    }
+  ],
+  "outcome": "PASS: incomplete and unauthorised transfers rejected without changes",
+  "remaining": "History mutation denial and persistence across restart not tested in this execution."
+}

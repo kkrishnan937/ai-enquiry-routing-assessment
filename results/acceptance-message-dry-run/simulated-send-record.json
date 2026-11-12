@@ -1,0 +1,10 @@
+{
+  "request_id": "PRACTICE-E002",
+  "test_actor": "Unassigned practice sender",
+  "channel": "Local file only",
+  "recorded_at_utc": "2026-11-10T01:38:50.278000+00:00",
+  "outcome": "SIMULATED_SEND_SAVED_LOCALLY",
+  "recipient": "resident@example.invalid",
+  "actual_delivery": false,
+  "message_file": "message-preview.txt"
+}

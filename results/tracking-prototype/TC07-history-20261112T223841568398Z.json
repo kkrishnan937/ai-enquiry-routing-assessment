@@ -1,0 +1,58 @@
+{
+  "executed_utc": "2026-11-12T22:38:41.568398+00:00",
+  "reference": "ENQ-94C05BDDAD83",
+  "application_sha256": "349d5ac4b0730a9550ec98bc5bb9191d5b8b9dc0cab72e4dda9fd7bb4d0468c8",
+  "history_mutation_actor": "rep-c, current responsible representative",
+  "mutation_checks": [
+    {
+      "method": "POST",
+      "path": "/api/enquiries/ENQ-94C05BDDAD83/history",
+      "response_status": 405,
+      "response": {
+        "error": "Action is not supported"
+      },
+      "record_and_history_unchanged": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/enquiries/ENQ-94C05BDDAD83/history",
+      "response_status": 405,
+      "response": {
+        "error": "History and unsupported operations cannot be changed"
+      },
+      "record_and_history_unchanged": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/enquiries/ENQ-94C05BDDAD83/history",
+      "response_status": 405,
+      "response": {
+        "error": "History and unsupported operations cannot be changed"
+      },
+      "record_and_history_unchanged": true
+    }
+  ],
+  "restart_environment": "Separate local application process, SQLite backup of working database, actual process stop/start with same copied database",
+  "history_events_retained": 6,
+  "history_equal_before_and_after_restart": true,
+  "responsible_after_restart": "rep-c",
+  "transfer_events": [
+    {
+      "seq": 26,
+      "enquiry": "ENQ-94C05BDDAD83",
+      "actor": "supervisor-a",
+      "timestamp": "2026-11-12T22:35:59.238764+00:00",
+      "field": "responsible",
+      "old_value": "\"rep-a\"",
+      "new_value": "\"rep-c\"",
+      "reason": "Workload redistribution"
+    }
+  ],
+  "working_record_unchanged": true,
+  "outcome": "PASS: application rejects tested history mutations; full history and transfer persist after copied-environment restart",
+  "limits": [
+    "Checked application routes only; direct database tampering is not prevented.",
+    "No restart of the interactive application or change to working records.",
+    "No separate event-level mutation endpoint exists in this application."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "executed_utc": "2026-11-12T22:33:18.683816+00:00",
+  "reference": "ENQ-94C05BDDAD83",
+  "actor": "Unauthenticated client; no session cookie or request token",
+  "verification_actor": "supervisor-a",
+  "environment": "Existing local application port 8766; direct HTTP requests",
+  "application_sha256": "349d5ac4b0730a9550ec98bc5bb9191d5b8b9dc0cab72e4dda9fd7bb4d0468c8",
+  "read_response": {
+    "status": 401,
+    "body": {
+      "error": "Sign in is required"
+    }
+  },
+  "update_request": {
+    "method": "POST",
+    "path": "/api/enquiries/ENQ-94C05BDDAD83/update",
+    "body": {
+      "next_action": "SIGNED-OUT TEST - must not persist"
+    }
+  },
+  "update_response": {
+    "status": 401,
+    "body": {
+      "error": "Sign in is required"
+    }
+  },
+  "record_and_history_unchanged": true,
+  "outcome": "PASS: unauthenticated read and update denied; no persisted changes",
+  "limit": "These requests test absence of authentication, not session expiry or stolen-session handling."
+}

@@ -1,0 +1,25 @@
+{
+  "executed_utc": "2026-11-12T21:45:22.253824+00:00",
+  "reference": "ENQ-94C05BDDAD83",
+  "environment": "local application port 8766; authenticated HTTP sessions",
+  "actor": "rep-b",
+  "verification_actor": "supervisor-a",
+  "application_sha256": "349d5ac4b0730a9550ec98bc5bb9191d5b8b9dc0cab72e4dda9fd7bb4d0468c8",
+  "request": {
+    "method": "POST",
+    "path": "/api/enquiries/ENQ-94C05BDDAD83/update",
+    "body": {
+      "next_action": "UNAUTHORISED TEST UPDATE - must not persist"
+    }
+  },
+  "response_status": 403,
+  "response": {
+    "error": "You do not have access to this enquiry"
+  },
+  "responsible": "rep-a",
+  "cover": null,
+  "next_action_after": "Follow up for the collection address",
+  "record_and_history_unchanged": true,
+  "outcome": "PASS: denied update after cover removal; no changes persisted",
+  "limit": "Fresh authenticated rep-b session; does not independently test revocation in the original pre-removal session."
+}

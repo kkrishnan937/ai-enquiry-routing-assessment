@@ -1,0 +1,15 @@
+# Optional pipeline: importing into Azure DevOps and agent availability are separate setup steps.
+trigger: none
+pool:
+  vmImage: ubuntu-latest
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.12'
+  - script: python prototype/tracking/test_acceptance.py
+    displayName: Run local HTTP acceptance checks
+  - task: PublishPipelineArtifact@1
+    condition: always()
+    inputs:
+      targetPath: results/tracking-prototype
+      artifact: tracking-acceptance-evidence

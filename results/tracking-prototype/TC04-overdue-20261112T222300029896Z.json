@@ -1,0 +1,21 @@
+{
+  "executed_utc": "2026-11-12T22:23:00.015807+00:00",
+  "reference": "ENQ-94C05BDDAD83",
+  "identity": "rep-a",
+  "application_sha256": "349d5ac4b0730a9550ec98bc5bb9191d5b8b9dc0cab72e4dda9fd7bb4d0468c8",
+  "environment": "Separate local application process using a SQLite backup of the working database; same application code",
+  "test_date": "2026-11-15",
+  "follow_up_date": "2026-11-14",
+  "overdue": true,
+  "visible_warning": "Follow-up overdue \u2014 staff review required",
+  "responsible": "rep-a",
+  "state": "Open",
+  "history_unchanged": true,
+  "working_record_unchanged": true,
+  "outcome": "PASS for controlled overdue-date read and rendered warning",
+  "limits": [
+    "No scheduled jobs implemented or executed; this checks date-dependent behaviour when the record is opened.",
+    "Does not establish behaviour of an external system or indefinite absence of automation.",
+    "Computer clock unchanged; temporary test process and database removed after execution."
+  ]
+}

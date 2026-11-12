@@ -1,0 +1,29 @@
+{
+  "executed_utc": "2026-11-12T20:58:50.562579+00:00",
+  "identity": "rep-a",
+  "evidence_identity": "supervisor-a for before/after full record list",
+  "environment": "existing local application on port 8766; separate authenticated HTTP sessions, not browser submission",
+  "application_sha256": "349d5ac4b0730a9550ec98bc5bb9191d5b8b9dc0cab72e4dda9fd7bb4d0468c8",
+  "rejected_request": {
+    "received": "2026-11-12T09:00:00-06:00",
+    "message": "TC-03 required-representative test: garbage cart not emptied.",
+    "missing": "Collection address",
+    "last_action": "Prepared test enquiry",
+    "next_action": "Request collection address",
+    "follow_up": "2026-11-13",
+    "responsible": "(omitted in rejected request)"
+  },
+  "rejected_response": {
+    "status": 400,
+    "body": {
+      "error": "A named responsible representative is required"
+    }
+  },
+  "records_before": 4,
+  "records_after_rejected_save": 4,
+  "accepted_status": 201,
+  "created_reference": "ENQ-94C05BDDAD83",
+  "retrieved_responsible": "rep-a",
+  "outcome": "PASS for missing-representative rejection, no creation on rejection, and valid save/retrieval",
+  "remaining": "TC-03 clarification and cover responsibility-retention steps not executed in this run"
+}

@@ -1,0 +1,30 @@
+{
+  "executed_utc": "2026-11-12T22:18:15.071307+00:00",
+  "reference": "ENQ-94C05BDDAD83",
+  "identity": "rep-a",
+  "environment": "existing local application port 8766; direct authenticated HTTP updates",
+  "application_sha256": "349d5ac4b0730a9550ec98bc5bb9191d5b8b9dc0cab72e4dda9fd7bb4d0468c8",
+  "saved_date_before": "2026-11-13",
+  "checks": [
+    {
+      "submitted_date": "",
+      "response_status": 400,
+      "response": {
+        "error": "A valid follow-up date is required"
+      },
+      "saved_date_after": "2026-11-13",
+      "record_and_history_unchanged": true
+    },
+    {
+      "submitted_date": "2026-02-30",
+      "response_status": 400,
+      "response": {
+        "error": "A valid follow-up date is required"
+      },
+      "saved_date_after": "2026-11-13",
+      "record_and_history_unchanged": true
+    }
+  ],
+  "outcome": "PASS: server rejects blank and impossible dates; saved record and history unchanged",
+  "remaining": "Valid date amendment and controlled overdue-date checks not performed in this execution."
+}
