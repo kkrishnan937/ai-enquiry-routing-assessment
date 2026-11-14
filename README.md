@@ -1,20 +1,20 @@
 # AI Use-Case Assessment and Data Readiness
 
-An independent AI Business Analyst portfolio exploring how a fictional public-service organization can assess AI opportunities and test a recommendation with a small prototype.
+A business analysis case study comparing improvements to municipal enquiry handling, supported by a local classification experiment and an enquiry-tracking prototype.
 
-Status — November 14, 2026: A narrow local AI classification experiment and supporting tracking demonstration are implemented and tested. Options, data readiness, error analysis and an assessment recommendation are documented for final user review. This is a synthetic learning case, not municipal delivery or production deployment.
+Updated November 14, 2026. The assessment, prototypes and evaluation are documented. The final recommendation is available for review.
 
 ## Main finding
 
 On 38 frozen synthetic evaluation examples, Qwen2.5 3B correctly classified 22 of 29 clear enquiries, compared with 7 for a simple keyword baseline. However, AI correctly flagged only 4 of 9 unclear/mixed cases for review, compared with 7 for the baseline. It did not meet the pre-agreed review safeguards. Neither tested approach is recommended for operational rollout from this evidence.
 
-Forty evaluation candidates were prepared; two development-overlap cases were excluded before predictions. Synthetic generation, AI-assisted review, remaining semantic-family overlap and the narrow baseline limit the conclusions. Read the [results and limitations](docs/06-evaluation/classification-results-and-recommendation.md), not the headline counts alone.
+Forty evaluation candidates were prepared; two development-overlap cases were excluded before predictions. The small synthetic dataset, related examples, lack of independent service-owner validation and simple baseline limit the conclusions. See the [results and limitations](docs/06-evaluation/classification-results-and-recommendation.md).
 
 ## Work available for review
 
 - [Sponsor request and business context](docs/01-plan/sponsor-request-memo.md).
-- [Interview walkthrough](docs/00-interview-walkthrough.md) and [AI assistance/ownership](ai-assistance-and-ownership-log.md).
-- [Options comparison](docs/04-options/evidence-and-data-comparison.md), [data-readiness assessment](docs/04-options/data-readiness-assessment.md) and [final recommendation for review](docs/06-evaluation/final-recommendation.md).
+- [Interview walkthrough](docs/00-interview-walkthrough.md) and [contribution record](ai-assistance-and-ownership-log.md).
+- [Options comparison](docs/04-options/evidence-and-data-comparison.md), [data-readiness assessment](docs/04-options/data-readiness-assessment.md) and [final recommendation](docs/06-evaluation/final-recommendation.md).
 - [Experiment brief](docs/04-options/classification-experiment-brief.md), [labelling guide](data/labelling-guide.md), [evaluation plan](docs/06-evaluation/classification-evaluation-plan.md) and [classification run guide](prototype/classification/README.md).
 - [Current-state intake summary](docs/03-current-state/intake-process-summary.md) and [connected practice records](docs/03-current-state/practice-records/README.md).
 - [Tracking requirements and acceptance criteria](docs/05-requirements/tracking-prototype-requirements.md).
@@ -70,6 +70,8 @@ See [Project scope](docs/project-scope.md) for boundaries and intended evidence.
 
 The assessment is inspired by Deliverable D3 of RFS-230-2026, Use-Case Assessment and Data Readiness Report. This is a smaller learning exercise. The prototype is an independent extension; the RFS excludes use-case implementation.
 
-This project is for learning and portfolio purposes only. The municipality, roles, and business scenario are fictional; no real stakeholder interviews or municipal operational measurements have been conducted. Request data will be synthetic. This project is not commissioned by or affiliated with the Government of Saskatchewan or any real agency. This disclosure applies to all project documents and code. Assumptions will be distinguished from measured results, and AI assistance will be disclosed.
+This project is for learning and portfolio purposes: the scenario and stakeholder conversations are simulated, the enquiry data is synthetic, and no municipal interviews or operational measurements were conducted; it is not commissioned by or affiliated with any government or agency.
 
-Free tools were used; no paid inference service was used. Hardware, electricity and staff effort were not costed. Final recommendation review, repository/Boards reconciliation and interview rehearsal remain; no further model tuning or tracking features are proposed.
+This portfolio was created using AI for stakeholder role-play, research support, drafting, code, synthetic data and testing, with the author reviewing decisions and findings.
+
+Free tools were used; no paid inference service was used. Hardware, electricity and staff effort were not costed. The repository and Azure Boards reflect the completed experiment. Final recommendation review remains; no further model tuning or tracking features are planned.

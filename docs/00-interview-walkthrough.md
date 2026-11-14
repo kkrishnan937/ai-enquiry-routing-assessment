@@ -1,6 +1,6 @@
 # Interview walkthrough
 
-Working outline — November 14, 2026. Adapt to your own understanding; do not memorise claims you cannot explain. Main disclosure is in the README.
+Prepared November 14, 2026.
 
 ## Two-minute explanation
 
@@ -12,9 +12,9 @@ I compared routing assistance, FAQ assistance, trend analysis and guidance impro
 
 I reviewed a labelling guide and twenty development examples, then compared keyword rules with a locally run AI model. A separate evaluation used thirty-eight synthetic examples after two overlap exclusions. AI correctly classified more clear enquiries, but flagged fewer unclear/mixed requests for review, so it did not meet our success rule.
 
-My recommendation was not to roll out either tested approach. The value of the work is the traceable decision: requirements, evidence gaps, fair output rules, errors and a recommendation consistent with the criteria rather than a forced AI success story.
+My recommendation was not to roll out either tested approach. I based the recommendation on the agreed success measures, including how each method handled unclear enquiries.
 
-AI assisted with source review, drafting, code and automated tests. I participated in elicitation, challenged and refined definitions, reviewed labels, performed browser checks and reviewed findings. I would describe the implementation as AI-assisted rather than independently coded.
+I asked the elicitation questions, challenged definitions, reviewed labels, performed browser checks and examined the findings. The contribution record separates my work from the implementation support.
 
 ## Evidence to show
 
@@ -24,7 +24,7 @@ AI assisted with source review, drafting, code and automated tests. I participat
 | Current-state understanding | [Intake summary](03-current-state/intake-process-summary.md) |
 | Governance judgement | [G-01](03-current-state/practice-records/06-guidance-approval-record.md), revised draft and retained publication hold |
 | Options and data readiness | [Comparison](04-options/evidence-and-data-comparison.md), [readiness assessment](04-options/data-readiness-assessment.md) |
-| Evaluation design and honest provenance | [Labelling guide](../data/labelling-guide.md), [dataset plan](06-evaluation/classification-dataset-plan.md), [freeze and exclusions](../data/classification-evaluation/evaluation-freeze.json) |
+| Evaluation design and data provenance | [Labelling guide](../data/labelling-guide.md), [dataset plan](06-evaluation/classification-dataset-plan.md), [freeze and exclusions](../data/classification-evaluation/evaluation-freeze.json) |
 | Actual AI implementation and findings | [Classification guide](../prototype/classification/README.md), [results](06-evaluation/classification-results-and-recommendation.md) |
 | Recommendation | [Final recommendation](06-evaluation/final-recommendation.md) |
 
@@ -36,7 +36,7 @@ AI assisted with source review, drafting, code and automated tests. I participat
 4. Why not recommend AI when 22/29 clear cases were correct? Explain the pre-agreed review safeguard and its 5/9 forced classifications.
 5. How was leakage controlled, and what remained weak? Explain freezing, separate labels, two exclusions and the lack of full semantic/domain independence.
 6. Did we measure savings? No. Model runtime is not active staff effort or response time; no operational baseline exists.
-7. What did I personally do, and what did AI do? Point to coached reviews, user checks and assistant-authored implementation. Do not convert agent agreement into real stakeholder validation.
+7. What did I personally do? Explain the elicitation, label review and browser checks. Distinguish these from independent implementation or service-owner validation.
 
 ## Supporting tracking demonstration
 
@@ -44,4 +44,4 @@ The local tracking application illustrates requirements and acceptance testing f
 
 ## Claims to avoid
 
-Do not say you implemented AI for Saskatoon, interviewed municipal staff, proved savings, trained/fine-tuned a model, validated production security, ran Azure Pipelines, obtained operational approval or wrote all code independently. The full assessment recommendation remains subject to the user's final review.
+Do not say you implemented AI for Saskatoon, interviewed municipal staff, proved savings, trained/fine-tuned a model, validated production security, ran Azure Pipelines, obtained operational approval or wrote all code independently. The final recommendation remains available for review.

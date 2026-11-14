@@ -1,4 +1,4 @@
-# Waste-enquiry classification — public-source check
+# Waste-enquiry classification: public-source check
 
 Reviewed: November 14, 2026  
 Status: Initial source check; experiment definitions proposed for BA review
@@ -11,9 +11,9 @@ Check whether public service information supports a narrow distinction between m
 
 | Reference | Public page | Information used |
 |---|---|---|
-| S-01 | [City of Saskatoon — Use our Online Services](https://www.saskatoon.ca/services-residents/connect-your-city/use-our-online-services) | Separately lists missed/partial curbside waste collection, damaged containers and waste violations. Illegal dumping is one example within the broader waste-violation category. |
-| S-02 | [City of Saskatoon — Illegal Dumping](https://www.saskatoon.ca/services-residents/waste-recycling/illegal-dumping) | Describes unauthorised waste disposal on public or private property. |
-| S-03 | [City of Saskatoon — Curbside Garbage (Black Cart)](https://www.saskatoon.ca/services-residents/waste-recycling/garbage/curbside-garbage-black-cart) | Describes scheduled collection and directs residents to check their collection calendar. Used for scheduled-collection context only. |
+| S-01 | [City of Saskatoon: Use our Online Services](https://www.saskatoon.ca/services-residents/connect-your-city/use-our-online-services) | Separately lists missed/partial curbside waste collection, damaged containers and waste violations. Illegal dumping is one example within the broader waste-violation category. |
+| S-02 | [City of Saskatoon: Illegal Dumping](https://www.saskatoon.ca/services-residents/waste-recycling/illegal-dumping) | Describes unauthorised waste disposal on public or private property. |
+| S-03 | [City of Saskatoon: Curbside Garbage (Black Cart)](https://www.saskatoon.ca/services-residents/waste-recycling/garbage/curbside-garbage-black-cart) | Describes scheduled collection and directs residents to check their collection calendar. Used for scheduled-collection context only. |
 
 Access date for all pages: November 14, 2026. Page publication/effective dates were not established for the category descriptions. No form was submitted, internal procedure inspected or operational approval obtained. Exclude prices, penalties, response promises and provider-routing claims from this experiment; they are unnecessary to distinguish enquiry intent.
 

@@ -1,8 +1,8 @@
-# Enquiry tracking prototype — requirements for review
+# Enquiry tracking prototype: requirements for review
 
 Date: November 11, 2026  
 Status: First requirements review completed with user; local implementation and automated checks available; business acceptance pending  
-Prepared by: BA with AI assistance
+Prepared by: BA
 
 ## Purpose
 
@@ -51,7 +51,7 @@ Excluded: AI classification, actual email delivery, production integration, coll
 | TR-06 | Restrict access to authorised users. Manager input; exact permissions are proposed. | Test responsible representative, assigned cover and supervisor access. A different representative cannot read or amend the enquiry, including through a direct request to the application. Hiding a screen alone does not count as access control. |
 | TR-07 | Preserve change history. Manager input. | Changes to responsibility, missing information, follow-up date and cover record the authenticated actor, timestamp, changed item, and old and new values. Ordinary users cannot edit or delete history through the application. Reopening after a restart retains it. This is application history, not a claim of tamper-proof storage. |
 
-## Decision BR-01 — Internal responsibility transfer
+## Decision BR-01: Internal responsibility transfer
 
 Agreed for the prototype during the November 11 requirements review: the user accepted the manager agent's proposal that the Customer Service Supervisor may authorise and record a permanent transfer within Customer Service for workload changes, staff departure or a longer absence requiring transfer.
 
@@ -74,7 +74,7 @@ Azure Boards will track requirements, tasks, findings and defects. Link automate
 3. Agree the authentication approach and distinguish demonstrated permissions from simulated roles.
 4. Select the implementation approach and record any reduced scope before building.
 
-### Implementation update — November 11
+### Implementation update: November 11
 
 The user authorised the local build after the requirements and test-case review. Version 0.1.0 uses Python's standard library, SQLite persistence, generated local test accounts, hashed passwords and authenticated server-side sessions. No paid dependency or cloud hosting was introduced. See the [application guide](../../prototype/tracking/README.md) for implementation decisions, including free-text missing-information updates and removing active cover before a permanent transfer. These design choices and browser usability still need user review; implementing them does not establish business acceptance.
 

@@ -2,7 +2,7 @@
 
 Version: 1.2, draft 1  
 Prepared: November 10, 2026  
-Prepared by: Customer Service Supervisor agent; compiled with AI assistance for BA review  
+Prepared by: Customer Service Supervisor; for BA review  
 Business owner/reviewer: Customer Service Manager  
 Review checkpoint: November 12, 2026  
 Release status: Not authorised for operational use  

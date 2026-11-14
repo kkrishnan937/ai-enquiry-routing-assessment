@@ -1,18 +1,18 @@
-# Tracking prototype — test cases
+# Tracking prototype: test cases
 
 Prepared: November 11, 2026  
 Status: TC-01–TC-07 designed; automated HTTP checks executed; full manual acceptance not completed  
 Requirements: [Tracking prototype requirements](../05-requirements/tracking-prototype-requirements.md)
 
-## Execution update — November 11
+## Execution update: November 11
 
 The **Not run** entries below preserve the original manual-case templates; they are not current claims that no application testing exists. Automated checks mapped to TC-01–TC-07 have now executed against a running local application. See the [execution summary and run evidence](../../results/tracking-prototype/README.md). Automated group success does not mean every manual step or usability check was performed. Manual execution records remain unpopulated; no municipal system or Azure pipeline was tested.
 
-## TC-01 — Retrieve separate enquiries and correspondence after restart
+## TC-01: Retrieve separate enquiries and correspondence after restart
 
 Requirement: TR-01  
 Objective: Establish that saved enquiry details and correspondence persist across an application restart and remain associated with the correct enquiry.  
-Execution status: **Not run — working application not yet available.**
+Execution status: **Not run: working application not yet available.**
 
 ### Preconditions
 
@@ -72,13 +72,13 @@ Create a separate execution record for each run; do not overwrite a failed run w
 
 ## Shared execution arrangements for TC-02–TC-07
 
-Use the execution-record fields and outcome rules defined under TC-01 for every case. Record actual results for each numbered step and retain separate runs for retests. All cases below are **Not run — working application not yet available**; no execution identities, versions, dates, evidence or defects have been recorded.
+Use the execution-record fields and outcome rules defined under TC-01 for every case. Record actual results for each numbered step and retain separate runs for retests. All cases below are **Not run: working application not yet available**; no execution identities, versions, dates, evidence or defects have been recorded.
 
 Use a fresh enquiry for each case, or restore a documented fixture before each independent scenario. Do not depend on another case having passed. Use authenticated test accounts: `rep-a` (responsible representative), `rep-b` (potential cover), `rep-c` (unrelated representative), and `supervisor-a`. Only the supervisor has the proposed supervisor role. The exact permission model and authentication approach require implementation review; a role selector alone cannot establish access-control results.
 
 Record the application version, database identifier, configured time zone and test clock where relevant. Use synthetic correspondence only. All dates below are test inputs, not a service standard. Access checks must exercise application-side enforcement as well as visible screens. Record the actual routes and request payloads once the application exists; missing routes or unclear behaviour must be resolved before execution rather than assumed to pass.
 
-## TC-02 — Receive missing information without losing earlier evidence
+## TC-02: Receive missing information without losing earlier evidence
 
 Requirement: TR-02  
 Objective: Update the current position while preserving other outstanding details, correspondence and change history.  
@@ -103,7 +103,7 @@ Execution status: **Not run.**
 
 Evidence: before/after record, all three messages, history entry and confirmation of no referral side effect. Actual results: **Not observed**.
 
-## TC-03 — Require and retain the responsible representative
+## TC-03: Require and retain the responsible representative
 
 Requirement: TR-03  
 Objective: Reject missing responsibility and prevent unrequested responsibility changes during clarification and cover.  
@@ -126,7 +126,7 @@ Execution status: **Not run.**
 
 Evidence: rejected save and persisted-record check, enquiry reference, before/after responsibility and distinct cover display. Actual results: **Not observed**.
 
-## TC-04 — Validate follow-up dates and retain overdue enquiries
+## TC-04: Validate follow-up dates and retain overdue enquiries
 
 Requirement: TR-04  
 Objective: Require a valid date, retain changes and avoid automatic closure or reassignment when follow-up becomes overdue.  
@@ -150,7 +150,7 @@ Execution status: **Not run.**
 
 Evidence: validation responses, persisted dates, history, test-clock settings, processing/log evidence where applicable, and overdue record. Actual results: **Not observed**.
 
-## TC-05 — Assign and remove absence cover
+## TC-05: Assign and remove absence cover
 
 Requirement: TR-05; supporting coverage of TR-03 and TR-06  
 Objective: Allow supervisor-controlled cover, usable handover and removal of access granted by cover.  
@@ -174,7 +174,7 @@ Execution status: **Not run.**
 
 Evidence: denied self-assignment, supervisor assignment/removal, cover's saved action, history, denied requests after removal and authorised retrieval showing no unauthorised update. Actual results: **Not observed**.
 
-## TC-06 — Enforce access for each test identity
+## TC-06: Enforce access for each test identity
 
 Requirement: TR-06  
 Objective: Demonstrate authorised reads/updates and deny unrelated users through both screens and direct requests.  
@@ -198,7 +198,7 @@ Execution status: **Not run.**
 
 Evidence: identity/session record, authorised results, denied list/search/direct requests with response details, and post-attempt record inspection. Actual results: **Not observed**. This is defined functional permission coverage, not a comprehensive security assessment.
 
-## TC-07 — Retain attributable history and prevent ordinary-user amendment
+## TC-07: Retain attributable history and prevent ordinary-user amendment
 
 Requirement: TR-07  
 Objective: Preserve actor, timestamp, changed item and old/new values across updates and restart, while rejecting ordinary-user history changes.  

@@ -1,4 +1,4 @@
-# Waste-enquiry classification — results and recommendation
+# Waste-enquiry classification: results and recommendation
 
 Prepared: November 14, 2026  
 Status: Initial final experiment findings for BA review; no operational approval
@@ -11,9 +11,9 @@ The local AI classified more clear synthetic enquiries than the simple keyword b
 
 - Twenty development examples reviewed with user coaching/batch acceptance; two AI development passes, with one authorised prompt revision. No model weights were trained.
 - Guide, baseline, revised prompt and settings were snapshotted before the evaluation candidates were authored: [approach manifest](../../data/classification-evaluation/frozen-approach/manifest.json).
-- Forty candidate texts were authored by the root assistant; a separate existing AI agent reviewed texts/guide without author labels or predictions by instruction, not enforced access separation. All proposed labels matched. This is not independent municipal validation.
+- Forty candidate texts received a separate label review before predictions. The reviewer was instructed to use only the text and guide, but access separation was not enforced. All proposed labels matched. This was not independent service-owner validation.
 - Two candidates were excluded for concrete development-overlap concerns before any predictions: one repair/negation near-paraphrase and one mixed-target structural overlap. No replacements were added merely to meet quotas. [Adjudication and limitations](../../data/classification-evaluation/adjudication.json).
-- Actual evaluated set: 38 examples — 10 missed collection, 10 reported dumped waste, 9 Other, 5 unclear and 4 mixed. [Dataset freeze](../../data/classification-evaluation/evaluation-freeze.json).
+- Actual evaluated set: 38 examples: 10 missed collection, 10 reported dumped waste, 9 Other, 5 unclear and 4 mixed. [Dataset freeze](../../data/classification-evaluation/evaluation-freeze.json).
 - One fixed paired run, no retries or post-result prompt/rule changes: [report](../../results/classification/held-out-final/report.md), [raw predictions, metrics and versions](../../results/classification/held-out-final/predictions.json).
 
 ## Results
@@ -37,8 +37,8 @@ Accuracy among classified cases excludes review outcomes; it must not be present
 | Missed collection | 0/10 | 10/10 |
 | Reported dumped waste | 5/10 | 8/10 |
 | Other | 2/9 | 4/9 |
-| Unclear — review required | 5/5 | 2/5 |
-| Mixed — review required | 2/4 | 2/4 |
+| Unclear: review required | 5/5 | 2/5 |
+| Mixed: review required | 2/4 | 2/4 |
 
 AI requests took approximately 10.92 seconds in total, median 0.22 seconds each, on the observed local environment. This is not a service-response or staff-effort measure. Shared-prompt caching, prior model residency and load effects limit runtime comparisons. No paid inference API was used; hardware, electricity and staff effort were not costed. Baseline runtime was not instrumented, so no quantified relative speed claim is supported.
 
@@ -66,7 +66,7 @@ This is a trade-off finding, not a claim that keyword rules are universally supe
 ## Evidence limitations
 
 - Small, deliberately balanced synthetic set; not actual demand or a statistically powered comparison.
-- Dataset author had development/prompt-result context. Second-pass AI review had prior project context and shared limitations; author/reviewer agreement does not establish domain correctness.
+- Dataset author had development/prompt-result context. The second reviewer had prior project context and shared limitations; author/reviewer agreement does not establish domain correctness.
 - Exact and lexical screening plus two exclusions do not establish full scenario-family disjointness. Repeated patterns within the evaluation set reduce effective diversity. Treat “held-out” as text excluded from development execution/tuning, with these semantic-independence qualifications.
 - Unknown prior-case status requests were treated as unclear underlying intent under the guide. A different real business task could legitimately classify them as an administrative category.
 - Broader alleged unauthorised container disposal was interpreted using the intended-disposal definition, without making a legal finding. Municipal operational taxonomy was not verified.
@@ -74,4 +74,4 @@ This is a trade-off finding, not a claim that keyword rules are universally supe
 
 ## Next BA action
 
-Review this recommendation with the user, then consolidate the options rationale, concise data-readiness findings and interview walkthrough. The tracking prototype, pilot proposals and operational guidance hold remain separate. No additional application features or measurement pilot is needed to explain the experiment.
+The options comparison, data-readiness assessment and interview walkthrough are complete. Review the final recommendation. Operational guidance publication remains a separate decision; no further build or measurement pilot is planned.

@@ -1,14 +1,14 @@
-# Tracking prototype — test summary
+# Tracking prototype: test summary
 
 Review date: November 12, 2026  
 Version: Local application 0.1.0  
 Application SHA-256: `349d5ac4b0730a9550ec98bc5bb9191d5b8b9dc0cab72e4dda9fd7bb4d0468c8`  
-Prepared by: BA with AI assistance  
+Prepared by: BA  
 Status: Supporting prototype accepted for learning in conversation; operational publication remains on hold
 
-Current position — November 14: the timestamp fix passed regression, the clean TC-01 repeat passed, and the user agreed to accept this supporting prototype for its learning purpose with limitations. Original review fields and earlier pending findings below are historical; they are not current open blockers. This acceptance does not confer municipal approval, permit live data or establish completion of the separate AI assessment. See the root README and AI-assistance log for portfolio ownership and the final assessment recommendation for the main decision.
+Current position: November 14: the timestamp fix passed regression, the clean TC-01 repeat passed, and the user agreed to accept this supporting prototype for its learning purpose with limitations. Original review fields and earlier pending findings below are historical; they are not current open blockers. This acceptance does not confer municipal approval, permit live data or establish completion of the separate AI assessment. See the [final recommendation](final-recommendation.md) for the assessment decision.
 
-## Retest update — timestamp correction
+## Retest update: timestamp correction
 
 F-01 is corrected in local version 0.1.1. Surrounding whitespace is trimmed before validating and storing the received timestamp. Blank/non-text, malformed or impossible, and missing-time-zone inputs now receive distinct errors.
 
@@ -16,7 +16,7 @@ F-01 is corrected in local version 0.1.1. Surrounding whitespace is trimmed befo
 
 ## Assessment
 
-### Clean TC-01 repeat completed — November 12
+### Clean TC-01 repeat completed: November 12
 
 The fresh-fixture assisted repeat passed on version 0.1.1. ENQ-057CABB1757A (garbage) and ENQ-3207A18BD57D (recycling) each contained their own incoming enquiry and outgoing request. After stopping the actual interactive application process and restarting with the same database, the assistant signed in as rep-a, searched each exact reference in the browser and inspected both records. Full HTTP comparisons confirmed all saved values and histories matched the [before snapshot](../../results/tracking-prototype/TC01-clean-2026-11-12-before.json); [after evidence and outcome](../../results/tracking-prototype/TC01-clean-2026-11-12-after.json) are retained. Minor input wording/whitespace differences are disclosed in that evidence and do not affect persistence or correspondence association.
 

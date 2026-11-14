@@ -2,7 +2,7 @@
 
 Version: 0.1  
 Prepared: November 14, 2026  
-Status: Working rules for the bounded experiment; review before freezing evaluation data
+Status: Working rules for the small experiment; review before freezing evaluation data
 
 ## Purpose and source basis
 
@@ -17,8 +17,8 @@ Record `type` as `missed_collection`, `reported_dumped_waste`, `other`, or null;
 | Missed collection | Text clearly reports an expected scheduled collection was missed or partial. No proof of cause, eligibility or entitlement is inferred. |
 | Reported dumped waste | Text clearly reports waste allegedly left/deposited/abandoned outside its intended disposal arrangement. Do not infer an offence or removal owner. |
 | Other | Text establishes a clear topic outside both target types: for example damaged cart, schedule question or billing. Not a substitute for unknown intent. |
-| Human review — unclear | Text does not supply enough context to distinguish the topic. Set type null and review_required true. |
-| Human review — mixed | Text contains two or more distinct active requests from different types with no single supported primary intent. Set type null and review_required true. Includes a target request combined with a distinct Other request. Repeated wording about one request is not mixed. |
+| Human review: unclear | Text does not supply enough context to distinguish the topic. Set type null and review_required true. |
+| Human review: mixed | Text contains two or more distinct active requests from different types with no single supported primary intent. Set type null and review_required true. Includes a target request combined with a distinct Other request. Repeated wording about one request is not mixed. |
 
 ## Apply consistently
 
@@ -40,12 +40,12 @@ Record `type` as `missed_collection`, `reported_dumped_waste`, `other`, or null;
 
 No held-out set or independent domain review exists yet. The mixed-intent interpretation below was confirmed with the user; this does not by itself freeze the complete guide or evaluation design.
 
-## Development edge-case review — November 14
+## Development edge-case review: November 14
 
 | Discussed text | Reviewed outcome | Reason |
 |---|---|---|
-| There's rubbish outside my house. Can you sort it out? | Human review — unclear | Outside location does not establish dumping or missed collection. Clarification could distinguish cart contents from separately left waste; no reply exists. Initial dumped-waste suggestion was corrected during coaching. |
-| My cart wasn't emptied, and someone has dumped a sofa beside the lane. | Human review — mixed | Two distinct active reports: missed collection and dumped waste. User explicitly confirmed this interpretation after the initial single-type suggestion was corrected. |
+| There's rubbish outside my house. Can you sort it out? | Human review: unclear | Outside location does not establish dumping or missed collection. Clarification could distinguish cart contents from separately left waste; no reply exists. Initial dumped-waste suggestion was corrected during coaching. |
+| My cart wasn't emptied, and someone has dumped a sofa beside the lane. | Human review: mixed | Two distinct active reports: missed collection and dumped waste. User explicitly confirmed this interpretation after the initial single-type suggestion was corrected. |
 | My cart is damaged, but no collection has been missed and no waste has been dumped. How do I get it repaired? | Other | Active request is cart repair; target keywords occur only in negated reports. User agreed with the explained interpretation. |
 
 These are development material; exclude them and near-duplicate variants from held-out evaluation. The review demonstrates coached clarification of rules, not independent annotator agreement. Clear Other versus review has also been discussed using the broken-cart example in the experiment brief. The initial ambiguous, mixed and negation review is complete; dataset composition, review arrangements and evaluation freeze still need explicit recording.

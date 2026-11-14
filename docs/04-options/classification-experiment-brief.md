@@ -1,4 +1,4 @@
-# Waste-enquiry classification — experiment brief
+# Waste-enquiry classification: experiment brief
 
 Prepared: November 14, 2026  
 Status: Draft for BA review; dataset, model and acceptance thresholds not agreed
@@ -9,7 +9,7 @@ Does AI offer enough improvement over simple keyword rules on a narrow synthetic
 
 ## Why this experiment
 
-The initial [option comparison](evidence-and-data-comparison.md) leaves routing and FAQ assistance needing preparation and real trend analysis without suitable records. This bounded classification experiment retains a connection to enquiry handling while avoiding unresolved departmental destination decisions. It was proposed for feasibility and learning value, not established as the highest-value organisational investment. Guidance/intake improvement remains a non-AI foundation; the tracking prototype is a separate supporting exercise.
+The initial [option comparison](evidence-and-data-comparison.md) leaves routing and FAQ assistance needing preparation and real trend analysis without suitable records. This small classification experiment retains a connection to enquiry handling while avoiding unresolved departmental destination decisions. It was proposed for feasibility and learning value, not established as the highest-value organisational investment. Guidance/intake improvement remains a non-AI foundation; the tracking prototype is a separate supporting exercise.
 
 ## Task and boundaries
 
@@ -56,7 +56,7 @@ Complete when reviewed definitions, development/evaluation data, reproducible ru
 
 Review a few development examples against these boundaries, then agree the annotation guide, dataset plan and evaluation targets before implementation.
 
-## Development discussion — November 14
+## Development discussion: November 14
 
 These examples were discussed with the user and must not appear in the held-out evaluation set or be paraphrased into it as near-duplicates.
 

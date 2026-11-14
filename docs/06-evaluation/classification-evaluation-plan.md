@@ -1,4 +1,4 @@
-# Classification experiment — success measures
+# Classification experiment: success measures
 
 Prepared: November 14, 2026  
 Status: Working evaluation rules; no experiment executed

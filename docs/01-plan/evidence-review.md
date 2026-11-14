@@ -9,7 +9,7 @@ Establish the published basis for investigating enquiry handling before defining
 
 ## Sources reviewed
 
-**S1. City of Saskatoon, Filling the Gap – A Vision for a Customer Experience Strategy, October 7, 2025.** Pages 1–2 describe the customer-service concern and the systems already being introduced. This is an administration report proposing further work; it does not establish that the proposed strategy was subsequently approved or completed.
+**S1. City of Saskatoon, Filling the Gap - A Vision for a Customer Experience Strategy, October 7, 2025.** Pages 1–2 describe the customer-service concern and the systems already being introduced. This is an administration report proposing further work; it does not establish that the proposed strategy was subsequently approved or completed.
 
 [Read the report](https://pub-saskatoon.escribemeetings.com/filestream.ashx?DocumentId=243825)
 

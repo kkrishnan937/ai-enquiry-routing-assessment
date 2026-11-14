@@ -1,50 +1,42 @@
 # Project scope
 
-Initial working scope based on the direction agreed November 6, 2026.
+Updated November 14, 2026.
 
-## Scope update — November 14
+## Business question
 
-The original departmental-routing candidate was narrowed to enquiry-type classification because destination ownership was not established. One keyword baseline and one local Qwen2.5 3B model were evaluated, with human review as a separate outcome. No departmental dispatch or answer-generation task was implemented. A separate tracking application was completed as a supporting learning extension and accepted for that purpose, not operational use. The original plan below is retained as context; the [final recommendation](06-evaluation/final-recommendation.md) records the current disposition, results and outstanding final user review. No further app features or logging pilot execution are proposed.
-
-## Purpose and scenario
-
-Build an interview-ready AI Business Analyst portfolio connecting a business problem to assessment, data readiness, a small experiment, and an evidence-based recommendation.
-
-A municipal customer-service team handles citizen enquiries about roads, waste collection, water services, and recreation. Start with email and web-form enquiries, from receipt to acceptance by the responsible team. Document the current process and investigate the causes of enquiry-handling difficulties. See the [draft sponsor request](01-plan/sponsor-request-memo.md).
-
-Compare three candidates: enquiry routing, FAQ assistance, and enquiry trend analysis. Enquiry routing is the initial prototype candidate, subject to the assessment.
+Which improvement to enquiry handling should be investigated first, and what information is needed to support that decision?
 
 ## Assessment
 
-Compare business value, feasibility, data readiness, citizen impact, ethical risk, regulatory complexity, and alignment with the organization's objectives. Define scoring anchors and assumptions before scoring. Consider simpler non-AI alternatives and record uncertainty.
+The case covers email and web-form enquiries about roads, waste collection, water services and recreation, from receipt to acceptance by a service team. The assessment compares routing assistance, FAQ assistance, trend analysis and improvements to guidance and intake.
 
-Assess relevant data quality, provenance, ownership, and labelling needs. Synthetic data can demonstrate checks; it cannot establish a real organization's data readiness.
+The comparison uses five criteria: resident benefit, staff effort, data readiness, delivery effort/cost and risk/control. Available evidence supports a qualitative comparison, not a financial business case or numerical investment ranking.
 
-## Prototype
+## Delivered work
 
-The proposed routing experiment accepts a synthetic enquiry and suggests a category and responsible team for human review. Compare keyword rules with an AI classification approach on the same held-out examples.
+- Current-state intake summary, elicitation notes and linked query, response, guidance and approval records.
+- Options comparison and data-readiness assessment.
+- Classification definitions, reviewed development examples and a frozen evaluation set.
+- Keyword baseline and local Qwen2.5 3B comparison, with retained predictions and error analysis.
+- Supporting tracking prototype, requirements, acceptance criteria and test evidence.
+- [Final recommendation](06-evaluation/final-recommendation.md) and [interview walkthrough](00-interview-walkthrough.md).
 
-No production integration, live citizen data, automatic request dispatch, or service eligibility decisions are planned. Technology, model, labels, dataset size, evaluation targets, and review workflow remain open decisions.
+## Classification experiment
 
-## Planned evidence
+Classify the reported enquiry as missed collection, reported dumped waste or Other. Refer unclear or mixed reports for human review. Missing operational details are assessed separately from the enquiry type.
 
-- Problem statement, process map, and stakeholder assumptions.
-- Use-case comparison with scoring rationale and selection decision.
-- Data-readiness assessment and synthetic-data documentation.
-- Prototype requirements and acceptance criteria.
-- Runnable prototype with reproducible evaluation and error analysis.
-- Recommendation covering limitations and further evidence needed.
+The experiment uses twenty development examples and thirty-eight evaluated examples after two pre-run exclusions. It does not assign departmental ownership, decide eligibility or generate resident answers.
 
-These are planned outputs, not completed work. Keep documentation proportionate to the decisions it supports.
+## Supporting tracking prototype
 
-## Evaluation
+Demonstrate saved enquiry records, missing-information updates, responsibility, absence cover, permissions and change history. It is separate from the classification experiment and was accepted for its demonstration purpose with documented limitations.
 
-Define a labelling guide and separate development examples from held-out evaluation examples. Report classification performance, routing errors, and human-review needs. Assess runtime and cost where relevant. Do not infer real-world accuracy, production readiness, or time savings from synthetic results alone.
+## Exclusions
 
-## Next step
+Production integration, live resident data, automatic dispatch, operational deployment, additional models and further application features are outside scope. No measured savings or municipal performance improvements are claimed. The optional Azure pipeline has not been configured or run.
 
-Define the organization's service boundaries and current enquiry-handling process before selecting a model or building the prototype.
+## Closeout
 
-## GitHub
+The assessment and experiment are documented. Final recommendation review remains. Operational guidance publication is a separate scenario decision and remains on hold.
 
-Development repository: https://github.com/kkrishnan937/ai-enquiry-routing-assessment. The repository is private while the portfolio is developed.
+[Private development repository](https://github.com/kkrishnan937/ai-enquiry-routing-assessment).

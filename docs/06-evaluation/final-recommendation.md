@@ -5,7 +5,7 @@ Status: BA recommendation for user review; not an organisational approval
 
 ## Recommendation
 
-Do not recommend operational rollout of the tested AI classifier or the simple keyword baseline. Retain clearer intake and ownership guidance as a foundational improvement to investigate, without claiming measured savings or reduced errors. Conclude this learning experiment with the documented accuracy/review trade-off rather than tuning until AI wins.
+Do not recommend operational rollout of the tested AI classifier or the simple keyword baseline. Retain clearer intake and ownership guidance as a foundational improvement to investigate, without claiming measured savings or reduced errors. Close the experiment with the observed classification and review results.
 
 ## Business question and options
 
@@ -20,7 +20,7 @@ The investigation asks how enquiry handling could support correct, useful answer
 
 ## Experiment and result
 
-One local Qwen2.5 3B model was compared with a transparent keyword baseline. Twenty development examples informed one prompt revision; the approach was then frozen. Forty evaluation candidates were AI-reviewed before predictions; two overlap cases were excluded, leaving thirty-eight. No final-run tuning or output replacement occurred.
+One local Qwen2.5 3B model was compared with a transparent keyword baseline. Twenty development examples informed one prompt revision; the approach was then frozen. Forty evaluation candidates were reviewed before predictions; two overlap cases were excluded, leaving thirty-eight. No final-run tuning or output replacement occurred.
 
 - Clear-type cases: AI correct on **22/29**, rules **7/29**.
 - Review-expected cases: AI correctly flagged **4/9**, rules **7/9**.
@@ -33,7 +33,7 @@ The pre-agreed rule required improved correct classifications without worse revi
 
 The prototype demonstrates a reproducible local comparison and the importance of assessing uncertainty separately from type accuracy. It does not demonstrate municipal performance improvement, staff-time savings, cost-effectiveness, correct departmental routing or readiness to replace staff judgement.
 
-The synthetic data and AI-assisted labels are not independent ground truth. Remaining semantic-family overlap, small review subsets and one run limit generalisation. [Data-readiness assessment](../04-options/data-readiness-assessment.md).
+The synthetic examples and labels were not independently validated by service owners. Remaining semantic-family overlap, small review subsets and one run limit generalisation. [Data-readiness assessment](../04-options/data-readiness-assessment.md).
 
 ## Follow-on conditions for a real organisation
 
@@ -41,4 +41,4 @@ Before proposing an operational pilot: establish agreed service boundaries and t
 
 ## Closeout position
 
-Stop further model/prompt expansion within this experiment. User review of the recommendation, repository/Boards status reconciliation and interview preparation remain. The supporting tracking prototype was accepted for learning in conversation; operational guidance publication remains on hold and no deployment is authorised. No new paid service, integration or pilot is required to finish the portfolio narrative.
+The experiment is complete and the repository and Azure Boards have been updated. Final review of this recommendation remains. The supporting tracking prototype was accepted for demonstration with documented limitations. The scenario guidance publication hold remains because the operational release conditions were not met. No further build or pilot is planned.
