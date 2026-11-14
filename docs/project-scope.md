@@ -19,7 +19,7 @@ The comparison uses five criteria: resident benefit, staff effort, data readines
 - Classification definitions, reviewed development examples and a frozen evaluation set.
 - Keyword baseline and local Qwen2.5 3B comparison, with retained predictions and error analysis.
 - Supporting tracking prototype, requirements, acceptance criteria and test evidence.
-- [Final recommendation](06-evaluation/final-recommendation.md) and [interview walkthrough](00-interview-walkthrough.md).
+- [Final recommendation](06-evaluation/final-recommendation.md).
 
 ## Classification experiment
 

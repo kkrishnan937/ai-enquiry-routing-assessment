@@ -78,4 +78,4 @@ This is a trade-off finding, not a claim that keyword rules are universally supe
 
 ## Next BA action
 
-The options comparison, data-readiness assessment and interview walkthrough are complete. Review the final recommendation. Operational guidance publication remains a separate decision; no further build or measurement pilot is planned.
+The options comparison and data-readiness assessment are complete. Review the final recommendation. Operational guidance publication remains a separate decision; no further build or measurement pilot is planned.

@@ -8,7 +8,7 @@ The work examines intake, missing information, responsibility and handoffs befor
 
 **Status:** Assessment, local prototypes and evaluation documented. Final recommendation available for review.
 
-**Start here:** [Interview walkthrough](docs/00-interview-walkthrough.md) | [Options comparison](docs/04-options/evidence-and-data-comparison.md) | [Final recommendation](docs/06-evaluation/final-recommendation.md)
+**Key documents:** [Business context](docs/01-plan/sponsor-request-memo.md) | [Options comparison](docs/04-options/evidence-and-data-comparison.md) | [Results](docs/06-evaluation/classification-results-and-recommendation.md) | [Final recommendation](docs/06-evaluation/final-recommendation.md)
 
 ## Main result
 
@@ -68,7 +68,6 @@ ai-enquiry-routing-assessment/
 |-- README.md
 |-- ai-assistance-and-ownership-log.md
 |-- docs/
-|   |-- 00-interview-walkthrough.md
 |   |-- project-scope.md
 |   |-- 01-plan/                 # Business context and source evidence
 |   |-- 03-current-state/        # Elicitation, intake and linked practice records
@@ -87,9 +86,9 @@ ai-enquiry-routing-assessment/
 
 The [contribution record](ai-assistance-and-ownership-log.md) describes the author's work. The [dataset plan](docs/06-evaluation/classification-dataset-plan.md), [labelling guide](data/labelling-guide.md) and [freeze record](data/classification-evaluation/evaluation-freeze.json) explain how the examples were prepared and reviewed.
 
-## For recruiters and hiring managers
+## Evidence and implementation
 
-Begin with the [interview walkthrough](docs/00-interview-walkthrough.md), then follow the framework links to inspect the reasoning, requirements and test evidence. The [results](docs/06-evaluation/classification-results-and-recommendation.md) and [recommendation](docs/06-evaluation/final-recommendation.md) show how the findings informed the decision. The local run guides below support a closer technical review.
+The framework links connect the business problem, requirements and test evidence. The [results](docs/06-evaluation/classification-results-and-recommendation.md) and [recommendation](docs/06-evaluation/final-recommendation.md) explain the decision. The run guides below describe how to inspect the local implementations.
 
 ## Reproduce the classification work
 
