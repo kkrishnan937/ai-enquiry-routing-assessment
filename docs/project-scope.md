@@ -39,4 +39,4 @@ Production integration, live resident data, automatic dispatch, operational depl
 
 The assessment and experiment are complete, with the documented limitations. Operational guidance publication is a separate scenario decision and remains on hold.
 
-[Repository](https://github.com/kkrishnan937/ai-enquiry-routing-assessment).
+[Repository](https://github.com/kkrishnan937/municipal-enquiry-ai-assessment).

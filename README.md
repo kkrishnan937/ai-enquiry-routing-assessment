@@ -1,6 +1,6 @@
 # Municipal Enquiry Handling: AI Use-Case Assessment
 
-Repository: `ai-enquiry-routing-assessment`.
+Repository: `municipal-enquiry-ai-assessment`.
 
 This case study examines incomplete enquiries and uncertain handoffs before comparing four improvement options. Unresolved departmental responsibility led to one smaller experiment: classify the enquiry topic, with a separate review outcome for unclear or mixed reports. The decision was whether the model improved classification without weakening that review safeguard. **Status: complete, with limitations.**
 
