@@ -12,7 +12,7 @@ Current position: November 14: the timestamp fix passed regression, the clean TC
 
 F-01 is corrected in local version 0.1.1. Surrounding whitespace is trimmed before validating and storing the received timestamp. Blank/non-text, malformed or impossible, and missing-time-zone inputs now receive distinct errors.
 
-[Retest run 20261112T224218784803Z](../../results/tracking-prototype/20261112T224218784803Z/report.md) passed **8 of 8 automated groups**: the seven original groups plus the new F-01 regression. The regression checks whitespace acceptance, persistence after restart, accurate rejection messages and absence of records created by invalid requests. Source hashes are in the run evidence. The version 0.1.0 walkthrough findings below remain historical evidence; F-01 no longer remains open for the tested 0.1.1 behaviour. Business acceptance and the clean manual TC-01 repeat remain outstanding.
+[Retest run 20261112T224218784803Z](../../results/archive/tracking-prototype/20261112T224218784803Z/report.md) passed **8 of 8 automated groups**: the seven original groups plus the new F-01 regression. The regression checks whitespace acceptance, persistence after restart, accurate rejection messages and absence of records created by invalid requests. Source hashes are in the run evidence. The version 0.1.0 walkthrough findings below remain historical evidence; F-01 no longer remains open for the tested 0.1.1 behaviour. Business acceptance and the clean manual TC-01 repeat remain outstanding.
 
 ## Assessment
 
@@ -32,7 +32,7 @@ Requirements: [TR-01–TR-07 and BR-01](../05-requirements/tracking-prototype-re
 
 The walkthrough used authenticated local accounts, synthetic enquiries and SQLite persistence. Negative requests were submitted using separate authenticated HTTP sessions; absence of authentication was tested separately. Overdue and later history-restart checks used temporary copies of the working database, with actual application processes. Only the overdue check used a controlled application date. Computer time was not altered.
 
-Primary automated baseline: [run report](../../results/tracking-prototype/20261111T214650602254Z/report.md) and [structured results](../../results/tracking-prototype/20261111T214650602254Z/results.json). Initial environment failures remain recorded in the [execution overview](../../results/tracking-prototype/README.md).
+Primary automated baseline: [run report](../../results/archive/tracking-prototype/20261111T214650602254Z/report.md) and [structured results](../../results/archive/tracking-prototype/20261111T214650602254Z/results.json). Initial environment failures remain recorded in the [execution overview](../../results/tracking-prototype/README.md).
 
 ## Results by case
 

@@ -1,6 +1,6 @@
 # Azure Boards evidence
 
-Captured November 14, 2026. Cropped screenshots omit account details and show the project at the time of capture; they are not a live status feed. Final portfolio review remains pending, and operational guidance publication remains on hold.
+Captured November 14, 2026. Cropped screenshots omit account details and show the project at the time of capture; they are not a live status feed. The captured states are historical evidence; operational guidance publication remains on hold.
 
 ## Work items
 
@@ -22,7 +22,7 @@ The prototype feature records the frozen evaluation, retained evidence and compl
 
 ## Findings and remaining review
 
-The feature remains Active pending final review. Higher clear-case classification did not meet the agreed safeguard for unclear and mixed cases. Neither method is recommended for operational use.
+The captured feature is Active pending final review; that recorded state is not changed by completing the portfolio documentation. Higher clear-case classification did not meet the agreed safeguard for unclear and mixed cases. Neither method is recommended for operational use.
 
 ![Experiment findings, remaining review and boundaries](images/azure-experiment-findings.jpg)
 

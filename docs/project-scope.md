@@ -37,6 +37,6 @@ Production integration, live resident data, automatic dispatch, operational depl
 
 ## Closeout
 
-The assessment and experiment are documented. Final recommendation review remains. Operational guidance publication is a separate scenario decision and remains on hold.
+The assessment and experiment are complete, with the documented limitations. Operational guidance publication is a separate scenario decision and remains on hold.
 
 [Private development repository](https://github.com/kkrishnan937/ai-enquiry-routing-assessment).

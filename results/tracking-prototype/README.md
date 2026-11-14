@@ -6,17 +6,17 @@ Update November 12: [Consolidated test summary](../../docs/06-evaluation/trackin
 
 ## Latest successful automated execution
 
-Superseding run: [November 12 version 0.1.1 retest](20261112T224218784803Z/report.md), **8 of 8 groups passed**, including the timestamp whitespace/error-message regression. [Structured evidence](20261112T224218784803Z/results.json) identifies the tested source hashes. The November 11 run below is retained as the original baseline.
+Superseding run: [November 12 version 0.1.1 retest](../archive/tracking-prototype/20261112T224218784803Z/report.md), **8 of 8 groups passed**, including the timestamp whitespace/error-message regression. [Structured evidence](../archive/tracking-prototype/20261112T224218784803Z/results.json) identifies the tested source hashes. The November 11 run below is retained as the original baseline.
 
-- Run: [20261111T214650602254Z report](20261111T214650602254Z/report.md).
-- Machine-readable evidence, source hashes, outcomes and observations: [results.json](20261111T214650602254Z/results.json).
+- Run: [20261111T214650602254Z report](../archive/tracking-prototype/20261111T214650602254Z/report.md).
+- Machine-readable evidence, source hashes, outcomes and observations: [results.json](../archive/tracking-prototype/20261111T214650602254Z/results.json).
 - Result: **7 of 7 automated HTTP test groups passed**, mapped to TC-01–TC-07.
 - Environment: local Python HTTP application processes; isolated SQLite databases; generated authenticated test accounts. Persistence checks stopped and restarted actual application processes using the same database.
 - Code and reproduction instructions: [application guide](../../prototype/tracking/README.md).
 
 ## Initial failures and corrections
 
-Two earlier runs are retained: [first attempt](20261111T214527349490Z/results.json) and [second attempt](20261111T214623165290Z/results.json). Both reported startup errors because the restricted execution environment denied connections to localhost. They are environment errors, not evidence that the seven business behaviours failed.
+Two earlier runs are retained: [first attempt](../archive/tracking-prototype/20261111T214527349490Z/results.json) and [second attempt](../archive/tracking-prototype/20261111T214623165290Z/results.json). Both reported startup errors because the restricted execution environment denied connections to localhost. They are environment errors, not evidence that the seven business behaviours failed.
 
 The successful run used permission to connect to the local application. During investigation, the runner was changed to bypass HTTP proxies for localhost and reliably clean up child processes on setup failure. Database connections were also changed to close explicitly after each operation; the initial failed cleanup had exposed Windows file-lock behaviour. Do not report the failed runs as passed or remove them from the evidence trail.
 

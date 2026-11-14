@@ -1,94 +1,63 @@
-# Municipal Enquiry Assessment
+# Municipal Enquiry Handling: AI Use-Case Assessment
 
-## Project overview
+Repository: `ai-enquiry-routing-assessment`.
 
-This business analysis case study starts with a service problem: how can customer-service staff provide a correct answer or referral without residents repeating information or chasing progress?
+This case study examines incomplete enquiries, repeated responsibility checks and uncertain handoffs before considering solutions. It compares four improvement options and tests a smaller enquiry-type classification task against keyword rules. A separate local tracking prototype demonstrates requirements and acceptance testing. **Status: complete, with limitations.** This does not authorise operational deployment or staff-guidance publication.
 
-The work examines intake, missing information, responsibility and handoffs before comparing possible improvements. Unresolved departmental boundaries led to a smaller experiment: classify the enquiry topic rather than decide which department owns it. The assessment compares routing assistance, FAQ assistance, trend analysis and improvements to guidance and intake.
+[Read the one-page project summary](SUMMARY.md).
 
-**Status:** Assessment, local prototypes and evaluation documented. Final recommendation available for review.
+## Key result
 
-**Key documents:** [Business context](docs/01-plan/sponsor-request-memo.md) | [Options comparison](docs/04-options/evidence-and-data-comparison.md) | [Results](docs/06-evaluation/classification-results-and-recommendation.md) | [Final recommendation](docs/06-evaluation/final-recommendation.md)
-
-## Main result
-
-On 38 synthetic evaluation examples, Qwen2.5 3B correctly classified **22/29 clear enquiries**, compared with **7/29** for keyword rules. However, it correctly flagged only **4/9 unclear or mixed cases** for review, compared with **7/9** for rules. It failed the agreed review safeguard. Neither tested method is recommended for operational rollout.
-
-The small synthetic dataset, related examples, lack of independent service-owner validation and simple baseline limit the conclusions. No operational savings or service improvements were measured.
+On 38 synthetic evaluation examples, Qwen2.5 3B correctly classified **22/29 clear cases**, compared with **7/29** for keyword rules. It correctly flagged **4/9 review cases**, compared with **7/9** for rules. The model failed the agreed safeguard: improve classification without worse handling of unclear or mixed reports. Neither tested method is recommended for operational use.
 
 ![Classification and review comparison on 38 synthetic examples](docs/images/classification-comparison.png)
 
-## The BA framework
+## Artifacts
 
-The ten stages below provide a reading path through the project. They are not a claim that every possible BA deliverable was needed or produced. Analysis moved between stages as evidence changed.
-
-| Stage | Question and reasoning | Evidence and position |
+| Artifact | What it shows | Link |
 |---|---|---|
-| 1. Business problem | What outcome is needed, and what evidence supports investigating it? Separate published context from assumptions about the cause. | [Sponsor request](docs/01-plan/sponsor-request-memo.md), [evidence review](docs/01-plan/evidence-review.md) and [scope](docs/project-scope.md). Operational prevalence and benefits were not established. |
-| 2. Stakeholders | Who performs the work, who approves instructions, and who can settle disputed responsibility? | [Elicitation notes](docs/03-current-state/elicitation-notes-2026-11-08.md) and [delegation record](docs/03-current-state/practice-records/05-delegation-record.md). Roles informed the scenario; no real service-owner validation. |
-| 3. As-Is process | What happens from receipt to acceptance, including missing details and exceptions? Distinguish acceptance from resolution. | [Intake process summary](docs/03-current-state/intake-process-summary.md) and [connected records](docs/03-current-state/practice-records/README.md). Written walkthrough; no separate process diagram. |
-| 4. Options and recommendation | Which response can be assessed with the available information? Consider simpler process changes alongside technology. | [Options comparison](docs/04-options/evidence-and-data-comparison.md) and [data-readiness assessment](docs/04-options/data-readiness-assessment.md). Qualitative comparison; no unsupported financial ranking. |
-| 5. To-Be process | What should staff record, retain and hand over? Which instructions depend on approval or system verification? | [Revised guidance draft](docs/03-current-state/practice-records/07-missed-collection-guidance-v1.2-draft.md) and [tracking requirements](docs/05-requirements/tracking-prototype-requirements.md). Proposed behaviour is documented; operational publication remains on hold. |
-| 6. Business and functional requirements | What behaviour is required, what is excluded, and what would demonstrate success? | [Tracking requirements and acceptance criteria](docs/05-requirements/tracking-prototype-requirements.md), [experiment brief](docs/04-options/classification-experiment-brief.md) and [evaluation measures](docs/06-evaluation/classification-evaluation-plan.md). Requirements are proportionate specifications, not separate BRD/FRD documents. |
-| 7. User stories and backlog | How are actions, dependencies, completion conditions and review decisions tracked? | [Azure Boards](https://dev.azure.com/W0850313/AI%20Enquiry%20Assessment/_workitems). Azure Boards was used instead of Jira. Access requires permission; the repository contains the supporting evidence. |
-| 8. Wireframes and interface | How can the required workflow be demonstrated and checked? | [Runnable tracking prototype](prototype/tracking/README.md). A working local interface was used; no Figma wireframes were produced. |
-| 9. Test scenarios | Does observed behaviour meet the criteria, including errors, access restrictions and uncertainty? | [Tracking test cases](docs/06-evaluation/tracking-prototype-test-cases.md), [test summary](docs/06-evaluation/tracking-prototype-test-summary.md), [classification results](docs/06-evaluation/classification-results-and-recommendation.md) and [retained predictions](results/classification/held-out-final/predictions.json). |
-| 10. Change request management | What changed, what authorised it, and what needs review before release? | [Article versions](docs/03-current-state/practice-records/03-article-versions.md), [approval conditions](docs/03-current-state/practice-records/06-guidance-approval-record.md) and [prompt revision review](results/classification/prompt-revision-review.md). These show change and approval analysis; no formal enterprise change-request workflow was implemented. |
+| Process maps | Current handoffs and proposed handling, with source and approval boundaries | [As-Is and To-Be](docs/03-current-state/process-maps.md) |
+| Options and data readiness | Why the task was narrowed and what evidence is missing | [Comparison](docs/04-options/evidence-and-data-comparison.md) / [Readiness](docs/04-options/data-readiness-assessment.md) |
+| Requirements and backlog | Roles, acceptance criteria and readable Azure work items | [Requirements](docs/05-requirements/tracking-prototype-requirements.md) / [Backlog](docs/05-requirements/backlog.md) |
+| Traceability | Requirement-to-story-to-test mapping and qualified results | [Matrix](docs/05-requirements/traceability-matrix.md) |
+| Results and recommendation | Classification/review errors and decision against rollout | [Results](docs/06-evaluation/classification-results-and-recommendation.md) / [Recommendation](docs/06-evaluation/final-recommendation.md) |
+| Implementation and evidence | Local code, final evidence and development history | [Classifier](prototype/classification/README.md) / [Tracking](prototype/tracking/README.md) / [Evidence index](results/README.md) |
 
-## Azure Boards
+## How to read this repo in 5 minutes
 
-Work was tracked through an assessment epic, features and tasks. The captures show the recorded scope and findings, with final review still pending. [View all four screenshots](docs/azure-boards-evidence.md).
+- Start with the [summary](SUMMARY.md) for the problem, role and decision.
+- Follow the [process maps](docs/03-current-state/process-maps.md) and [options comparison](docs/04-options/evidence-and-data-comparison.md).
+- Check the [backlog](docs/05-requirements/backlog.md) and [traceability](docs/05-requirements/traceability-matrix.md).
+- Read the [results](docs/06-evaluation/classification-results-and-recommendation.md) and [recommendation](docs/06-evaluation/final-recommendation.md), including their limitations.
 
-![Azure Boards work-item overview](docs/images/azure-work-items.jpg)
+## BA framework
 
-## Case study: municipal enquiry handling
+| Stage | Analysis and evidence |
+|---|---|
+| 1. Business problem | [Sponsor request](docs/01-plan/sponsor-request-memo.md), [source evidence](docs/01-plan/evidence-review.md) and [scope](docs/project-scope.md) define the concern and investigation boundary. |
+| 2. Stakeholders | [Elicitation notes](docs/03-current-state/elicitation-notes-2026-11-08.md) and [delegated authority](docs/03-current-state/practice-records/05-delegation-record.md) distinguish work, approval and escalation responsibilities. |
+| 3. As-Is process | [Current-state map](docs/03-current-state/process-maps.md#as-is-walkthrough-account) shows missing-information loops and acceptance. |
+| 4. Options and recommendation | [Options comparison](docs/04-options/evidence-and-data-comparison.md) and [data readiness](docs/04-options/data-readiness-assessment.md) explain the smaller experiment selected. |
+| 5. To-Be process | [Proposed process map](docs/03-current-state/process-maps.md#to-be-proposed-missed-collection-handling) and [guidance draft](docs/03-current-state/practice-records/07-missed-collection-guidance-v1.2-draft.md) distinguish approved scenario rules from release dependencies. |
+| 6. Requirements | [Tracking requirements](docs/05-requirements/tracking-prototype-requirements.md) and [experiment brief](docs/04-options/classification-experiment-brief.md) define behaviour, limits and acceptance criteria. |
+| 7. Backlog | [Readable backlog](docs/05-requirements/backlog.md) records Azure items and requirement-based story summaries. |
+| 8. Interface | [Tracking application guide](prototype/tracking/README.md) describes the working local interface. |
+| 9. Testing | [Traceability matrix](docs/05-requirements/traceability-matrix.md) connects requirements to cases, outcomes and evidence. |
+| 10. Change management | [Article versions](docs/03-current-state/practice-records/03-article-versions.md), [approval conditions](docs/03-current-state/practice-records/06-guidance-approval-record.md) and [prompt revision](results/classification/prompt-revision-review.md) retain the change rationale. |
 
-### The problem
+## Evidence limits
 
-The scenario explores incomplete enquiries, repeated ownership checks and uncertain handoffs. The BA task was to distinguish reported concerns from verified causes, identify the information needed for a decision and avoid treating a returned request as proof of an ownership dispute.
+Forty evaluation candidates were prepared; two development-overlap cases were excluded before predictions. The small synthetic dataset, related scenarios, shared author/reviewer context, lack of independent service-owner validation and simple baseline limit the conclusions. One model and one final run do not establish general performance. No operational savings or service improvements were measured. Model runtime is not staff effort; hardware, electricity and staff costs were not assessed.
 
-### The solution assessed
+Public service information supports the context, not internal municipal approval, a financial ranking or evidence of problem frequency. Enquiry-type classification does not decide departmental ownership, eligibility or illegality. Missing operational details remain separate from the type.
 
-The project compared four improvement options, then tested enquiry-type classification using keyword rules and one local model. The categories were missed collection, reported dumped waste and Other, with a separate review outcome for unclear or mixed reports. Missing addresses and dates remained separate intake issues.
+The supporting tracking prototype was accepted for demonstration with limitations. Its results do not verify a municipality's system, establish production security or remove the guidance publication hold. Some observations are user-reported; full manual sign-off, accessibility and security reviews were not completed. Concurrent edits, manual confirmations and direct database modification remain limitations. See the [test summary](docs/06-evaluation/tracking-prototype-test-summary.md) and [application guide](prototype/tracking/README.md).
 
-A supporting enquiry-tracking prototype demonstrated saved records, responsibility, absence cover, permissions and change history. It is separate from the classifier and was accepted for its demonstration purpose with documented limitations.
+Change records demonstrate review of wording and approval conditions. They do not establish an enterprise change-request workflow. The working interface is a local demonstration; the requirements are proportionate specifications.
 
-### Business value and recommendation
+## Project records
 
-The assessment identifies the conditions needed before an operational decision: agreed responsibilities, reliable labels, approved guidance and evidence of staff workload and service outcomes. The experiment shows why better classification counts alone are insufficient when ambiguous enquiries are handled less safely.
-
-The recommendation is to stop this experiment, retain the results and investigate clearer guidance and intake as a foundation. No measured financial or service benefit is claimed. See the [final recommendation](docs/06-evaluation/final-recommendation.md).
-
-## Repository guide
-
-The existing folders organise evidence by its purpose. Links above connect them into the end-to-end framework without duplicating files.
-
-```text
-ai-enquiry-routing-assessment/
-|-- README.md
-|-- ai-assistance-and-ownership-log.md
-|-- docs/
-|   |-- project-scope.md
-|   |-- 01-plan/                 # Business context and source evidence
-|   |-- 03-current-state/        # Elicitation, intake and linked practice records
-|   |-- 04-options/              # Comparison, readiness and experiment scope
-|   |-- 05-requirements/         # Behaviour and acceptance criteria
-|   |-- 06-evaluation/           # Test cases, findings and recommendations
-|   `-- images/                  # Result charts
-|-- data/                        # Synthetic examples, labels and frozen snapshots
-|-- prototype/
-|   |-- classification/         # Keyword baseline and local model evaluation
-|   |-- tracking/               # Supporting enquiry application
-|   |-- config/                 # Practice configuration
-|   `-- checks/                 # Supporting inspection scripts
-`-- results/                    # Retained execution evidence
-```
-
-The [contribution record](ai-assistance-and-ownership-log.md) describes the author's work. The [dataset plan](docs/06-evaluation/classification-dataset-plan.md), [labelling guide](data/labelling-guide.md) and [freeze record](data/classification-evaluation/evaluation-freeze.json) explain how the examples were prepared and reviewed.
-
-## Evidence and implementation
-
-The framework links connect the business problem, requirements and test evidence. The [results](docs/06-evaluation/classification-results-and-recommendation.md) and [recommendation](docs/06-evaluation/final-recommendation.md) explain the decision. The run guides below describe how to inspect the local implementations.
+[Azure Boards captures](docs/azure-boards-evidence.md) retain the states shown at capture, including Active and New items. Portfolio completion does not retrospectively change those records. The [readable backlog](docs/05-requirements/backlog.md) separates recorded statuses from delivered evidence. [Contribution record](ai-assistance-and-ownership-log.md).
 
 ## Reproduce the classification work
 
@@ -123,8 +92,21 @@ This application demonstrates enquiry tracking and handover; it is separate from
 
 The assessment is inspired by Deliverable D3 of RFS-230-2026, Use-Case Assessment and Data Readiness Report. This is a smaller learning exercise. The prototype is an independent extension; the RFS excludes use-case implementation.
 
+Published with written permission from Lana Currie-Lingelbach
+Government of Saskatchewan
+Procurement Business Partner
+Strategic Sourcing
+Business &  Technology Solutions
+Procurement Management Division
+Ministry of SaskBuilds & Procurement on Nov 5,2026, for educational and
+portfolio use of the RFS materials. This project is an independent learning
+exercise. It is not commissioned by, endorsed by, or affiliated with the
+Government of Saskatchewan.
+
 This project is for learning and portfolio purposes: the scenario and stakeholder conversations are simulated, the enquiry data is synthetic, and no municipal interviews or operational measurements were conducted; it is not commissioned by or affiliated with any government or agency.
 
 This portfolio was created using AI for stakeholder role-play, research support, drafting, code, synthetic data and testing, with the author reviewing decisions and findings.
 
-Free tools were used; no paid inference service was used. Hardware, electricity and staff effort were not costed. The repository and Azure Boards reflect the completed experiment. Final recommendation review remains; no further model tuning or tracking features are planned.
+Free tools were used; no paid inference service was used. Hardware, electricity and staff effort were not costed. No further model tuning or tracking features are planned.
+
+© 2026 Kailas Krishnan. Shared for portfolio review. All rights reserved.

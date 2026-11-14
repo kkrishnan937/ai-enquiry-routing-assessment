@@ -11,8 +11,8 @@ The revision prioritises mixed/unclear review decisions and explains that clear 
 
 ## Evidence
 
-- [Original pass](ai-development-20261114T200027864720Z/report.md).
-- [Revised pass](ai-development-20261114T200233209487Z/report.md).
+- [Original pass](../archive/classification/ai-development-20261114T200027864720Z/report.md).
+- [Revised pass](../archive/classification/ai-development-20261114T200233209487Z/report.md).
 - Each run retains raw model responses and per-example predictions in predictions.json. No rule/prompt edits occurred within either run; no output was replaced by an expected answer.
 
 ## Result

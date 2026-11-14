@@ -1,7 +1,7 @@
 # Final assessment recommendation
 
 Prepared: November 14, 2026  
-Status: BA recommendation for user review; not an organisational approval
+Status: Completed assessment recommendation; not an organisational approval
 
 ## Recommendation
 
@@ -41,4 +41,4 @@ Before proposing an operational pilot: establish agreed service boundaries and t
 
 ## Closeout position
 
-The experiment is complete and the repository and Azure Boards have been updated. Final review of this recommendation remains. The supporting tracking prototype was accepted for demonstration with documented limitations. The scenario guidance publication hold remains because the operational release conditions were not met. No further build or pilot is planned.
+The assessment and experiment are complete, with limitations. The repository and Azure Boards retain the delivery evidence and recorded decisions. The supporting tracking prototype was accepted for demonstration with documented limitations. The scenario guidance publication hold remains because the operational release conditions were not met. No further build or pilot is planned.
