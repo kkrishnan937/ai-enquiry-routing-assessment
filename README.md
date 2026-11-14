@@ -67,7 +67,7 @@ The [classification guide](prototype/classification/README.md) records the local
 
 The assessment is inspired by Deliverable D3 of RFS-230-2026, Use-Case Assessment and Data Readiness Report. The prototype is an independent extension; the RFS excludes use-case implementation.
 
-Published with written permission from the Government of Saskatchewan, Ministry of SaskBuilds and Procurement (Procurement Management Division), received Nov 4, for educational and portfolio use of the RFS materials. This project is an independent learning exercise. It is not commissioned by, endorsed by, or affiliated with the Government of Saskatchewan.
+Published with written permission from the Government of Saskatchewan, Ministry of SaskBuilds and Procurement (Procurement Management Division), received Nov4,2026, for educational and portfolio use of the RFS materials. This project is an independent learning exercise. It is not commissioned by, endorsed by, or affiliated with the Government of Saskatchewan.
 
 The scenario and stakeholder conversations are simulated, the enquiry data is synthetic, and no municipal interviews or operational measurements were conducted.
 
