@@ -35,6 +35,12 @@ The ten stages below provide a reading path through the project. They are not a 
 | 9. Test scenarios | Does observed behaviour meet the criteria, including errors, access restrictions and uncertainty? | [Tracking test cases](docs/06-evaluation/tracking-prototype-test-cases.md), [test summary](docs/06-evaluation/tracking-prototype-test-summary.md), [classification results](docs/06-evaluation/classification-results-and-recommendation.md) and [retained predictions](results/classification/held-out-final/predictions.json). |
 | 10. Change request management | What changed, what authorised it, and what needs review before release? | [Article versions](docs/03-current-state/practice-records/03-article-versions.md), [approval conditions](docs/03-current-state/practice-records/06-guidance-approval-record.md) and [prompt revision review](results/classification/prompt-revision-review.md). These show change and approval analysis; no formal enterprise change-request workflow was implemented. |
 
+## Azure Boards
+
+Work was tracked through an assessment epic, features and tasks. The captures show the recorded scope and findings, with final review still pending. [View all four screenshots](docs/azure-boards-evidence.md).
+
+![Azure Boards work-item overview](docs/images/azure-work-items.jpg)
+
 ## Case study: municipal enquiry handling
 
 ### The problem
