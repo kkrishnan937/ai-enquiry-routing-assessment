@@ -17,13 +17,13 @@ This is a readable copy of the ten recorded epic, feature and task titles. State
 | [#9](https://dev.azure.com/W0850313/AI%20Enquiry%20Assessment/_workitems/edit/9) | Task | Assess tracking-method evidence and unresolved system checks | Closed | Evidence assessment complete; operational verification not established |
 | [#10](https://dev.azure.com/W0850313/AI%20Enquiry%20Assessment/_workitems/edit/10) | Task | Review version 1.2 draft and record release-readiness decision | Closed | Review concluded publication must remain on hold |
 
-Work-item priorities and complete parent-child links: **[AUTHOR TO COMPLETE]**. The repository does not supply a full field export. Relationships are not inferred from titles.
+**Azure metadata:** Work-item priorities and a complete parent-child export are not available in the retained repository evidence. They are not inferred from titles. The proposed story priorities below do not replace Azure field values.
 
 ## Requirement-based story summaries
 
-The retained evidence does not establish Azure User Story items or their IDs. The seven BA-US identifiers below are document-local summaries of TR-01–TR-07, not exported Azure story IDs and not newly created board items. Confirmation of any existing Azure User Story IDs: **[AUTHOR TO COMPLETE]**.
+The retained evidence does not establish Azure User Story items or their IDs. The seven BA-US identifiers below are document-local summaries of TR-01–TR-07, not exported Azure story IDs and not newly created board items. No Azure User Story IDs are claimed. The published board inventory contains an epic, features and tasks; it does not establish a complete export of every possible item.
 
-Acceptance criteria are reproduced from the requirements. The status describes existing test evidence, not an invented Azure story state. Story priorities were not recorded; each remains for the author to set.
+Acceptance criteria are reproduced from the requirements. The status describes existing test evidence, not an invented Azure story state. The priorities below are proposed for this portfolio review, based on the recorded prototype purpose. They are not presented as priorities agreed before implementation or as values exported from Azure. All seven are Must have because each is necessary to demonstrate the stated tracking, handover, access or history controls. This is a scope judgement, not a claim that every story has equal delivery order.
 
 ## BA-US-01: Retain an identifiable enquiry and its correspondence
 
@@ -35,7 +35,7 @@ As a customer service representative, I want to save and retrieve each enquiry w
 
 Save two distinct synthetic enquiries, each with a unique reference, received timestamp, resident message and synthetic outgoing request for details. After restarting the application, an authorised user can search by each reference and retrieve the correct enquiry with all values unchanged and both messages attached to the correct record. Do not send email.
 
-**Priority:** [AUTHOR TO COMPLETE]
+**Proposed priority:** Must have. Without saved, retrievable records and associated messages, the prototype cannot demonstrate continuity of an enquiry.
 
 **Status:** Implemented; corresponding automated TC-01 passed on the retained version 0.1.1 run. Manual qualifications and limitations remain in the [traceability matrix](traceability-matrix.md). This is not operational acceptance.
 
@@ -49,7 +49,7 @@ As a customer service representative, I want to update outstanding information w
 
 Save “collection address missing,” the request for that address, and the next action. Reopen and amend the record. When the representative records the supplied collection address, mark that detail as received so it is no longer outstanding; retain any other missing details. Retain the original enquiry, request for details and resident reply. Record the actor and timestamp of the update in history. Save and reopen to confirm the current position and earlier correspondence remain retrievable. Recording an address must not automatically refer the enquiry.
 
-**Priority:** [AUTHOR TO COMPLETE]
+**Proposed priority:** Must have. Staff need the current missing details and earlier messages to continue follow-up without losing evidence.
 
 **Status:** Implemented; corresponding automated TC-02 passed on the retained version 0.1.1 run. Manual qualifications and limitations remain in the [traceability matrix](traceability-matrix.md). This is not operational acceptance.
 
@@ -63,7 +63,7 @@ As a customer service representative, I want to see named responsibility separat
 
 Saving a tracked enquiry without a responsible representative is rejected with a clear message. Requesting missing information, recording a resident reply and assigning cover do not silently change the original responsibility. After the collection address is recorded, save and reopen the enquiry and confirm that the named responsible representative is unchanged. Receiving missing details does not constitute receiving-team acceptance; that later workflow is outside this prototype. Display the responsible representative and covering representative separately.
 
-**Priority:** [AUTHOR TO COMPLETE]
+**Proposed priority:** Must have. The stated purpose requires a named owner and a clear distinction between responsibility and temporary cover.
 
 **Status:** Implemented; corresponding automated TC-03 passed on the retained version 0.1.1 run. Manual qualifications and limitations remain in the [traceability matrix](traceability-matrix.md). This is not operational acceptance.
 
@@ -79,7 +79,7 @@ As a customer service representative, I want to save and retrieve an agreed foll
 
 Saving an enquiry awaiting details without a valid follow-up date is rejected. A valid date can be saved, retrieved and changed. An overdue date remains visible; it does not trigger closure or reassignment. No fixed follow-up interval is imposed.
 
-**Priority:** [AUTHOR TO COMPLETE]
+**Proposed priority:** Must have. The demonstration must retain an agreed follow-up date and show that overdue work is not silently closed or reassigned.
 
 **Status:** Implemented; corresponding automated TC-04 passed on the retained version 0.1.1 run. Manual qualifications and limitations remain in the [traceability matrix](traceability-matrix.md). This is not operational acceptance.
 
@@ -93,7 +93,7 @@ As a customer service supervisor, I want to assign and remove named absence cove
 
 A supervisor can assign and remove a named covering representative. A representative cannot grant themselves cover access. The assigned cover can retrieve the enquiry and correspondence and record the next action. Removing cover removes that user's access unless another permission applies. Record both changes in history.
 
-**Priority:** [AUTHOR TO COMPLETE]
+**Proposed priority:** Must have. Named cover and revocation are necessary to demonstrate the agreed absence-handover workflow.
 
 **Status:** Implemented; corresponding automated TC-05 passed on the retained version 0.1.1 run. Manual qualifications and limitations remain in the [traceability matrix](traceability-matrix.md). This is not operational acceptance.
 
@@ -107,7 +107,7 @@ As a customer service supervisor, I want to restrict enquiry access to authorise
 
 Test responsible representative, assigned cover and supervisor access. A different representative cannot read or amend the enquiry, including through a direct request to the application. Hiding a screen alone does not count as access control.
 
-**Priority:** [AUTHOR TO COMPLETE]
+**Proposed priority:** Must have. Account restrictions are essential to the role-based demonstration; unrelated users must not read or change an enquiry.
 
 **Status:** Implemented; corresponding automated TC-06 passed on the retained version 0.1.1 run. Manual qualifications and limitations remain in the [traceability matrix](traceability-matrix.md). This is not operational acceptance.
 
@@ -121,7 +121,7 @@ As a customer service supervisor, I want to retain attributable changes and resp
 
 Changes to responsibility, missing information, follow-up date and cover record the authenticated actor, timestamp, changed item, and old and new values. Ordinary users cannot edit or delete history through the application. Reopening after a restart retains it. This is application history, not a claim of tamper-proof storage.
 
-**Priority:** [AUTHOR TO COMPLETE]
+**Proposed priority:** Must have. The prototype must show attributable changes and retain earlier responsibility; without history, handover decisions cannot be checked.
 
 **Status:** Implemented; corresponding automated TC-07 passed on the retained version 0.1.1 run. Manual qualifications and limitations remain in the [traceability matrix](traceability-matrix.md). This is not operational acceptance.
 
