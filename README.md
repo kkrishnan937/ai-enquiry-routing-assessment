@@ -10,6 +10,8 @@ On 38 frozen synthetic evaluation examples, Qwen2.5 3B correctly classified 22 o
 
 Forty evaluation candidates were prepared; two development-overlap cases were excluded before predictions. The small synthetic dataset, related examples, lack of independent service-owner validation and simple baseline limit the conclusions. See the [results and limitations](docs/06-evaluation/classification-results-and-recommendation.md).
 
+![Classification and review comparison on 38 synthetic examples](docs/images/classification-comparison.png)
+
 ## Work available for review
 
 - [Sponsor request and business context](docs/01-plan/sponsor-request-memo.md).

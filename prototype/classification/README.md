@@ -39,3 +39,11 @@ References: [Ollama Windows documentation](https://docs.ollama.com/windows), [mo
 - [Frozen approach](../../data/classification-evaluation/frozen-approach/manifest.json), [dataset freeze](../../data/classification-evaluation/evaluation-freeze.json) and [raw final results](../../results/classification/held-out-final/predictions.json) retain provenance. Later editorial documentation changes may differ from source hashes; use the retained snapshots to inspect the evaluated version, not the latest prose.
 - The runner uses local HTTP requests to Ollama. If the execution environment blocks localhost, authorised local connectivity is required. No cloud fallback or hidden retries exist.
 - The twenty development examples and the thirty-eight evaluated examples are now seen evidence. Any future result-informed refinement needs a new evaluation design/set for a fresh unseen-performance claim.
+
+## Result charts
+
+The PNG charts in `docs/images/` are generated from the retained final predictions, without rerunning the model. To regenerate them, install the optional plotting dependency `matplotlib` and run:
+
+```powershell
+python prototype/classification/plot_results.py
+```

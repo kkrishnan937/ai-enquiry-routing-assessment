@@ -18,6 +18,8 @@ The local AI classified more clear synthetic enquiries than the simple keyword b
 
 ## Results
 
+![Correct classifications, review flags and forced classifications](../images/classification-comparison.png)
+
 | Measure | Keyword baseline | Local AI |
 |---|---:|---:|
 | Correct automatic classification / 29 clear-type cases | 7 (24.1%) | 22 (75.9%) |
@@ -31,6 +33,8 @@ The local AI classified more clear synthetic enquiries than the simple keyword b
 Accuracy among classified cases excludes review outcomes; it must not be presented alone as overall accuracy. The overall matching-outcome count is descriptive, not the pre-agreed success rule.
 
 ### Per-type and review subsets
+
+![Correct outcomes by enquiry type and review subset](../images/classification-by-type.png)
 
 | Expected subset | Keyword correct | AI correct |
 |---|---:|---:|
