@@ -39,12 +39,14 @@ flowchart TD
     H --> N
     H --> L
     H --> I --> J
-    L -->|Yes| M --> O
+    L -->|Yes| M
     M --> J
     J -->|Yes| O
     J -->|No| K --> P --> I
     L -->|No: reason needs checking| K
 ```
+
+Source: [intake steps 1–7](intake-process-summary.md#process-described) and [representative account](elicitation-notes-2026-11-08.md#representative-account).
 
 Waiting for a resident or a team does not transfer tracking responsibility. A return alone does not prove an ownership dispute. Acceptance is not resolution or a promised collection date.
 
@@ -77,13 +79,6 @@ flowchart TD
         N[Review details and responsibility]
         O[Record acceptance and take investigation responsibility]
     end
-    subgraph Managers[Customer Service Manager and service managers]
-        P[Review unresolved boundary with service managers]
-        Q{Standing boundary agreed?}
-        R[Record joint approval within delegated scope]
-        S[Refer disputed boundary to Director, Municipal Operations]
-        T[Record decision before treating it as a standing rule]
-    end
     A --> B --> C
     C -->|No| D --> F
     D --> E --> G --> C
@@ -94,12 +89,38 @@ flowchart TD
     N -->|Accepted| O --> J
     J -->|Yes| U[Handoff complete; service work not yet complete]
     J -->|No response or disagreement| M --> I
-    M -->|Unresolved boundary| P --> Q
-    Q -->|Yes| R --> T
+    M -->|Unresolved boundary| X[Continue to boundary-decision map below]
+```
+
+Source: [G-01](practice-records/06-guidance-approval-record.md), [draft version 1.2](practice-records/07-missed-collection-guidance-v1.2-draft.md) and [interim direction](elicitation-notes-2026-11-08.md#interim-direction-stated-by-the-manager).
+
+The tracking method must be verified before guidance release. This map prescribes no unverified status, field, reminder, automatic reassignment or automatic closure. The model experiment does not decide departmental ownership. Responsibility for sending the acceptance acknowledgement is not established by these sources.
+
+## To-Be: disputed-boundary decision
+
+This is the continuation of the unresolved-boundary branch above. The representative keeps tracking the request while this decision is sought.
+
+```mermaid
+flowchart TD
+    subgraph Supervisor[Customer Service Supervisor]
+        M[Record both teams' reasons and escalate unresolved boundary]
+    end
+    subgraph Manager[Customer Service Manager]
+        P[Review unresolved boundary with service managers]
+    end
+    subgraph Services[Relevant service managers]
+        Q{Standing boundary agreed?}
+        R[Record joint approval within delegated scope]
+    end
+    subgraph Director[Director, Municipal Operations]
+        S[Consider disputed boundary within D-01 scope]
+    end
+    M --> P --> Q
+    Q -->|Yes| R --> T[Record decision before treating it as a standing rule]
     Q -->|No| S --> T
 ```
 
-The tracking method must be verified before guidance release. This map prescribes no unverified status, field, reminder, automatic reassignment or automatic closure. The model experiment does not decide departmental ownership. Responsibility for sending the acceptance acknowledgement is not established by these sources.
+Source: [D-01 delegation](practice-records/05-delegation-record.md#delegation) and [interim direction](elicitation-notes-2026-11-08.md#interim-direction-stated-by-the-manager).
 
 ## Legend
 

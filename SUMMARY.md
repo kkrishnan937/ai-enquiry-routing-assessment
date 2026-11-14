@@ -8,7 +8,7 @@ The case examines incomplete enquiries, repeated responsibility checks and uncer
 
 ## My role
 
-I set the scope, asked elicitation questions, checked understanding, reviewed requirements and labels, performed browser checks and examined the findings. I did not independently code the implementation. The contribution record separates my work from drafting and implementation support.
+I set the scope, asked elicitation questions, checked understanding, reviewed requirements and labels, performed browser checks and examined the findings. I did not independently code the implementation.
 
 ## What I produced
 
@@ -28,6 +28,16 @@ The agreed safeguard required improved classification without worse review handl
 
 Do not deploy either tested method. Retain clearer intake and ownership guidance as a foundation to investigate. Any operational pilot would need authorised representative records, independent service-owner labels and agreed error and review-workload limits. No additional build is proposed.
 
-## Limitations
+## Supporting prototype
 
-Small synthetic samples are not representative demand. Labels lack independent domain validation. Dataset author and reviewer shared project context. Related scenario patterns remain despite two pre-run overlap exclusions. One model, a simple baseline and one final run do not establish general performance. Model runtime is not staff effort. No savings, municipal improvement, production security or operational approval was demonstrated. The separate tracking prototype does not remove the guidance publication hold.
+A separate local tracking application demonstrates saved records, responsibility, cover, permissions and history; its [test evidence](docs/06-evaluation/tracking-prototype-test-summary.md) is separate from the classifier results.
+
+## Limits
+
+- Synthetic and related scenarios, including remaining overlap after two exclusions, do not represent municipal demand.
+- Labels were not independently validated by service owners.
+- The dataset author and reviewer shared project context.
+- One model and one final run do not establish general performance.
+- The simple keyword baseline does not represent a mature rules system.
+- No operational savings or service improvement was measured, and model runtime is not staff effort.
+- The prototype is not a municipal system and establishes neither production security, complete manual sign-off nor operational approval or removal of the guidance publication hold.
