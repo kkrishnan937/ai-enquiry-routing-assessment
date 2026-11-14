@@ -1,0 +1,412 @@
+{
+  "review_date": "2026-11-14",
+  "provenance": "existing Systems Administrator agent acting as AI second-pass reviewer; prior project context, not independent municipal expert; author labels and predictions withheld by instruction, not access enforcement",
+  "materials_read": [
+    "data/labelling-guide.md",
+    "data/classification-evaluation/inputs.json"
+  ],
+  "guide_version": "0.1",
+  "review_status": "Proposed annotations only; no municipal approval or consensus adjudication",
+  "examples": [
+    {
+      "id": "EVAL-001",
+      "type": null,
+      "review_required": true,
+      "review_group": "mixed",
+      "reason": "Two active target reports: uncompleted scheduled round and rubble disposal."
+    },
+    {
+      "id": "EVAL-002",
+      "type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Refuse deliberately discarded in a planter outside intended disposal."
+    },
+    {
+      "id": "EVAL-003",
+      "type": null,
+      "review_required": true,
+      "review_group": "mixed",
+      "reason": "Dumping report plus distinct recycling-advice request."
+    },
+    {
+      "id": "EVAL-004",
+      "type": "other",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Facility opening-hours question; neither target incident."
+    },
+    {
+      "id": "EVAL-005",
+      "type": "other",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Odour-prevention advice between normal collections."
+    },
+    {
+      "id": "EVAL-006",
+      "type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Expected collection day ended without container service."
+    },
+    {
+      "id": "EVAL-007",
+      "type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Witnessed furniture pushed into creek from vehicle."
+    },
+    {
+      "id": "EVAL-008",
+      "type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Explicit report of unauthorized disposal into public container, instead of arranged disposal; label reported intent, not offence."
+    },
+    {
+      "id": "EVAL-009",
+      "type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Explicit partial emptying during current collection visit."
+    },
+    {
+      "id": "EVAL-010",
+      "type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Reports recurring missed scheduled collections; one active intent."
+    },
+    {
+      "id": "EVAL-011",
+      "type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Explicit skipped scheduled pickup; access context does not change reported intent."
+    },
+    {
+      "id": "EVAL-012",
+      "type": "other",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Registration for normal service, not missed event."
+    },
+    {
+      "id": "EVAL-013",
+      "type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Witnessed plasterboard discarded down riverbank instead of disposal facility."
+    },
+    {
+      "id": "EVAL-014",
+      "type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Explicit uncompleted collection report; tag and entitlement disclaimer do not negate missed event."
+    },
+    {
+      "id": "EVAL-015",
+      "type": null,
+      "review_required": true,
+      "review_group": "mixed",
+      "reason": "Missed pickup report plus separate billing explanation request."
+    },
+    {
+      "id": "EVAL-016",
+      "type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Observed rubble transported and abandoned on lot."
+    },
+    {
+      "id": "EVAL-017",
+      "type": null,
+      "review_required": true,
+      "review_group": "unclear",
+      "reason": "Unspecified waste-service problem cannot establish intent."
+    },
+    {
+      "id": "EVAL-018",
+      "type": null,
+      "review_required": true,
+      "review_group": "unclear",
+      "reason": "Prior case topic unavailable; reopening alone does not establish either target or distinct clear Other topic."
+    },
+    {
+      "id": "EVAL-019",
+      "type": "other",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Stolen empty-container replacement request."
+    },
+    {
+      "id": "EVAL-020",
+      "type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Machines explicitly abandoned outside arranged collection."
+    },
+    {
+      "id": "EVAL-021",
+      "type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Explicit dumped belongings incident report."
+    },
+    {
+      "id": "EVAL-022",
+      "type": "other",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Container-size change request."
+    },
+    {
+      "id": "EVAL-023",
+      "type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Television explicitly discarded, not awaiting pickup."
+    },
+    {
+      "id": "EVAL-024",
+      "type": "other",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Lid replacement is sole active request; target mentions negated."
+    },
+    {
+      "id": "EVAL-025",
+      "type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Building containers skipped on advertised collection day."
+    },
+    {
+      "id": "EVAL-026",
+      "type": null,
+      "review_required": true,
+      "review_group": "mixed",
+      "reason": "Abandoned freezer report plus distinct recreation-registration request."
+    },
+    {
+      "id": "EVAL-027",
+      "type": "other",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Recycling sorting advice only."
+    },
+    {
+      "id": "EVAL-028",
+      "type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Explicit unwanted disposal into another party's skip, not a collection-round problem."
+    },
+    {
+      "id": "EVAL-029",
+      "type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Booked collection failed; extra waste explicitly negated."
+    },
+    {
+      "id": "EVAL-030",
+      "type": "other",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Swimming registration question."
+    },
+    {
+      "id": "EVAL-031",
+      "type": "other",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Fee-calculation enquiry."
+    },
+    {
+      "id": "EVAL-032",
+      "type": "other",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Future holiday calendar question; no failed pickup."
+    },
+    {
+      "id": "EVAL-033",
+      "type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Explicit incomplete scheduled container service."
+    },
+    {
+      "id": "EVAL-034",
+      "type": null,
+      "review_required": true,
+      "review_group": "unclear",
+      "reason": "Status request provides no underlying waste-case intent."
+    },
+    {
+      "id": "EVAL-035",
+      "type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Explicit missed scheduled pickup; missing service location does not obscure type."
+    },
+    {
+      "id": "EVAL-036",
+      "type": null,
+      "review_required": true,
+      "review_group": "unclear",
+      "reason": "Sender cannot describe underlying refuse situation."
+    },
+    {
+      "id": "EVAL-037",
+      "type": null,
+      "review_required": true,
+      "review_group": "unclear",
+      "reason": "Unavailable attachment and vague issue do not establish intent."
+    },
+    {
+      "id": "EVAL-038",
+      "type": null,
+      "review_required": true,
+      "review_group": "mixed",
+      "reason": "Missed service report plus separate stolen-container replacement request."
+    },
+    {
+      "id": "EVAL-039",
+      "type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Waste explicitly thrown into hedge outside normal disposal arrangement."
+    },
+    {
+      "id": "EVAL-040",
+      "type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "reason": "Current round served neighbour but not sender's container."
+    }
+  ],
+  "counts": {
+    "missed_collection": 10,
+    "reported_dumped_waste": 10,
+    "other": 10,
+    "review_required": 10,
+    "unclear": 5,
+    "mixed": 5,
+    "total": 40
+  },
+  "unresolved_label_cases": [],
+  "ambiguities_and_review_notes": [
+    {
+      "ids": [
+        "EVAL-008",
+        "EVAL-028"
+      ],
+      "note": "Reported dumping includes explicit allegedly improper disposal inside a public container or third-party skip. This follows the guide's outside intended disposal arrangement definition; it is not an offence or removal-owner judgment. Confirm this scope explicitly during adjudication."
+    },
+    {
+      "ids": [
+        "EVAL-018",
+        "EVAL-034"
+      ],
+      "note": "Generic reopening/status requests concern unknown underlying cases. Applied unclear rather than Other because the guide says Other is not a substitute for unknown intent. Consider a written rule if the intended task is to label administrative request intent instead."
+    },
+    {
+      "ids": [
+        "EVAL-014"
+      ],
+      "note": "Tag may affect eligibility or cause but neither is the classification target; clear report of missed collection remains missed_collection."
+    },
+    {
+      "ids": [
+        "EVAL-035"
+      ],
+      "note": "Missing location is metadata/readiness gap, not enough to require review when intent is explicit."
+    }
+  ],
+  "overlap_concerns": [
+    {
+      "ids": [
+        "EVAL-024"
+      ],
+      "severity": "high",
+      "note": "Near-paraphrase risk against coached development cart-repair/negated-target example: broken component, repair/replacement request, explicit exclusion of collection and dumped waste. Review family-based split; do not count as clean held-out evidence without adjudication."
+    },
+    {
+      "ids": [
+        "EVAL-001"
+      ],
+      "severity": "medium",
+      "note": "Same structural family as coached mixed missed-collection plus dumped-object example. Different objects/location, but intent pair and explicit coordination match. Semantic family overlap needs split review."
+    },
+    {
+      "ids": [
+        "EVAL-009",
+        "EVAL-033"
+      ],
+      "severity": "medium",
+      "note": "Internal partial-container-collection family, closely related proposition; retain together and disclose effective scenario diversity."
+    },
+    {
+      "ids": [
+        "EVAL-006",
+        "EVAL-010",
+        "EVAL-011",
+        "EVAL-014",
+        "EVAL-025",
+        "EVAL-029",
+        "EVAL-035",
+        "EVAL-040"
+      ],
+      "severity": "medium",
+      "note": "Several skipped/failed scheduled-pickup variants. Verify none are paraphrases of development examples beyond those included in the supplied guide; additional development material was not read."
+    },
+    {
+      "ids": [
+        "EVAL-007",
+        "EVAL-013",
+        "EVAL-016"
+      ],
+      "severity": "medium",
+      "note": "Witnessed transport/discard of waste family, including creek/riverbank variants."
+    },
+    {
+      "ids": [
+        "EVAL-020",
+        "EVAL-021",
+        "EVAL-023",
+        "EVAL-039"
+      ],
+      "severity": "medium",
+      "note": "Explicit abandoned/discarded object in public place family; lexical changes alone may overstate independent scenario coverage."
+    },
+    {
+      "ids": [
+        "EVAL-019",
+        "EVAL-038"
+      ],
+      "severity": "medium",
+      "note": "Stolen-container replacement component appears standalone and within mixed request. Keep family grouped if future development examples are added."
+    },
+    {
+      "ids": [
+        "EVAL-017",
+        "EVAL-018",
+        "EVAL-034",
+        "EVAL-036",
+        "EVAL-037"
+      ],
+      "severity": "low",
+      "note": "Vague waste issue/unknown prior case family; varies surface form but limited distinction types."
+    }
+  ],
+  "limitations": [
+    "No model outputs or author labels consulted.",
+    "Existing agent had project context; this is not independent blind municipal validation.",
+    "Only the supplied guide and candidate texts were read; complete development-family overlap cannot be established.",
+    "No labels were frozen or ground truth approved by this pass."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "captured_utc": "2026-11-12T23:00:12.888176+00:00",
+  "application_sha256": "a1064dbda3ebfa9ca7099fbb4ed2cf6f308e1bb41e788531092f738da242170b",
+  "records": [
+    {
+      "id": "ENQ-057CABB1757A",
+      "received": "2026-11-12T09:00:00-06:00",
+      "message": "Clean test A: my garbage cart was not emptied.",
+      "responsible": "rep-a",
+      "cover": null,
+      "missing": "Collection address",
+      "address": "",
+      "last_action": "Preparing request for collection address",
+      "next_action": "\tRequest the collection address",
+      "follow_up": "2026-11-13",
+      "state": "Open",
+      "messages": [
+        {
+          "direction": "incoming",
+          "text": "Clean test A: my garbage cart was not emptied.",
+          "recorded": "2026-11-12T22:57:32.677435+00:00"
+        },
+        {
+          "direction": "outgoing",
+          "text": "Please provide the collection address for your garbage enquiry.",
+          "recorded": "2026-11-12T22:58:06.572135+00:00"
+        }
+      ],
+      "history": [
+        {
+          "seq": 27,
+          "enquiry": "ENQ-057CABB1757A",
+          "actor": "rep-a",
+          "timestamp": "2026-11-12T22:57:32.677435+00:00",
+          "field": "created",
+          "old_value": "null",
+          "new_value": "{\"id\": \"ENQ-057CABB1757A\", \"received\": \"2026-11-12T09:00:00-06:00\", \"message\": \"Clean test A: my garbage cart was not emptied.\", \"responsible\": \"rep-a\", \"cover\": null, \"missing\": \"Collection address\", \"address\": \"\", \"last_action\": \"Preparing request for collection address\", \"next_action\": \"\\tRequest the collection address\", \"follow_up\": \"2026-11-13\", \"state\": \"Open\", \"messages\": [{\"direction\": \"incoming\", \"text\": \"Clean test A: my garbage cart was not emptied.\", \"recorded\": \"2026-11-12T22:57:32.677435+00:00\"}]}",
+          "reason": ""
+        },
+        {
+          "seq": 28,
+          "enquiry": "ENQ-057CABB1757A",
+          "actor": "rep-a",
+          "timestamp": "2026-11-12T22:58:06.572135+00:00",
+          "field": "messages",
+          "old_value": "[{\"direction\": \"incoming\", \"text\": \"Clean test A: my garbage cart was not emptied.\", \"recorded\": \"2026-11-12T22:57:32.677435+00:00\"}]",
+          "new_value": "[{\"direction\": \"incoming\", \"text\": \"Clean test A: my garbage cart was not emptied.\", \"recorded\": \"2026-11-12T22:57:32.677435+00:00\"}, {\"direction\": \"outgoing\", \"text\": \"Please provide the collection address for your garbage enquiry.\", \"recorded\": \"2026-11-12T22:58:06.572135+00:00\"}]",
+          "reason": ""
+        }
+      ],
+      "overdue": false
+    },
+    {
+      "id": "ENQ-3207A18BD57D",
+      "received": "2026-11-12T09:15:00-06:00",
+      "message": "Clean test B: my recycling cart was not emptied.",
+      "responsible": "rep-a",
+      "cover": null,
+      "missing": "Missed collection date",
+      "address": "",
+      "last_action": "Preparing request for missed collection date",
+      "next_action": "Request the missed collection date",
+      "follow_up": "2026-11-14",
+      "state": "Open",
+      "messages": [
+        {
+          "direction": "incoming",
+          "text": "Clean test B: my recycling cart was not emptied.",
+          "recorded": "2026-11-12T22:59:05.682917+00:00"
+        },
+        {
+          "direction": "outgoing",
+          "text": "Please confirm the missed collection date for your recycling enquiry",
+          "recorded": "2026-11-12T22:59:28.147993+00:00"
+        }
+      ],
+      "history": [
+        {
+          "seq": 29,
+          "enquiry": "ENQ-3207A18BD57D",
+          "actor": "rep-a",
+          "timestamp": "2026-11-12T22:59:05.684055+00:00",
+          "field": "created",
+          "old_value": "null",
+          "new_value": "{\"id\": \"ENQ-3207A18BD57D\", \"received\": \"2026-11-12T09:15:00-06:00\", \"message\": \"Clean test B: my recycling cart was not emptied.\", \"responsible\": \"rep-a\", \"cover\": null, \"missing\": \"Missed collection date\", \"address\": \"\", \"last_action\": \"Preparing request for missed collection date\", \"next_action\": \"Request the missed collection date\", \"follow_up\": \"2026-11-14\", \"state\": \"Open\", \"messages\": [{\"direction\": \"incoming\", \"text\": \"Clean test B: my recycling cart was not emptied.\", \"recorded\": \"2026-11-12T22:59:05.682917+00:00\"}]}",
+          "reason": ""
+        },
+        {
+          "seq": 30,
+          "enquiry": "ENQ-3207A18BD57D",
+          "actor": "rep-a",
+          "timestamp": "2026-11-12T22:59:28.147993+00:00",
+          "field": "messages",
+          "old_value": "[{\"direction\": \"incoming\", \"text\": \"Clean test B: my recycling cart was not emptied.\", \"recorded\": \"2026-11-12T22:59:05.682917+00:00\"}]",
+          "new_value": "[{\"direction\": \"incoming\", \"text\": \"Clean test B: my recycling cart was not emptied.\", \"recorded\": \"2026-11-12T22:59:05.682917+00:00\"}, {\"direction\": \"outgoing\", \"text\": \"Please confirm the missed collection date for your recycling enquiry\", \"recorded\": \"2026-11-12T22:59:28.147993+00:00\"}]",
+          "reason": ""
+        }
+      ],
+      "overdue": false
+    }
+  ]
+}

@@ -4,7 +4,9 @@ Review date: November 12, 2026
 Version: Local application 0.1.0  
 Application SHA-256: `349d5ac4b0730a9550ec98bc5bb9191d5b8b9dc0cab72e4dda9fd7bb4d0468c8`  
 Prepared by: BA with AI assistance  
-Status: Evidence consolidated; user acceptance decision outstanding
+Status: Supporting prototype accepted for learning in conversation; operational publication remains on hold
+
+Current position — November 14: the timestamp fix passed regression, the clean TC-01 repeat passed, and the user agreed to accept this supporting prototype for its learning purpose with limitations. Original review fields and earlier pending findings below are historical; they are not current open blockers. This acceptance does not confer municipal approval, permit live data or establish completion of the separate AI assessment. See the root README and AI-assistance log for portfolio ownership and the final assessment recommendation for the main decision.
 
 ## Retest update — timestamp correction
 
@@ -13,6 +15,12 @@ F-01 is corrected in local version 0.1.1. Surrounding whitespace is trimmed befo
 [Retest run 20261112T224218784803Z](../../results/tracking-prototype/20261112T224218784803Z/report.md) passed **8 of 8 automated groups**: the seven original groups plus the new F-01 regression. The regression checks whitespace acceptance, persistence after restart, accurate rejection messages and absence of records created by invalid requests. Source hashes are in the run evidence. The version 0.1.0 walkthrough findings below remain historical evidence; F-01 no longer remains open for the tested 0.1.1 behaviour. Business acceptance and the clean manual TC-01 repeat remain outstanding.
 
 ## Assessment
+
+### Clean TC-01 repeat completed — November 12
+
+The fresh-fixture assisted repeat passed on version 0.1.1. ENQ-057CABB1757A (garbage) and ENQ-3207A18BD57D (recycling) each contained their own incoming enquiry and outgoing request. After stopping the actual interactive application process and restarting with the same database, the assistant signed in as rep-a, searched each exact reference in the browser and inspected both records. Full HTTP comparisons confirmed all saved values and histories matched the [before snapshot](../../results/tracking-prototype/TC01-clean-2026-11-12-before.json); [after evidence and outcome](../../results/tracking-prototype/TC01-clean-2026-11-12-after.json) are retained. Minor input wording/whitespace differences are disclosed in that evidence and do not affect persistence or correspondence association.
+
+This resolves the previously outstanding clean manual TC-01 repeat. Earlier references below to that repeat being outstanding describe the position before this update. Prototype business acceptance remains pending; operational publication remains on hold.
 
 The tested local prototype demonstrates enquiry persistence, manual tracking updates, retained responsibility, supervisor-controlled cover and transfers, application-side access controls and retained change history. Seven automated HTTP test groups passed on November 11. Assisted browser checks and targeted HTTP checks on November 11–12 provide additional evidence.
 

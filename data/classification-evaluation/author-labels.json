@@ -1,0 +1,326 @@
+{
+  "status": "Author labels awaiting second-pass review; no predictions inspected",
+  "provenance": "Root assistant authored synthetic text and initial labels after development-based choices were fixed. This is not statistically independent real-world ground truth.",
+  "examples": [
+    {
+      "family": "two-target-active",
+      "expected_type": null,
+      "review_required": true,
+      "review_group": "mixed",
+      "author_reason": "Distinct active requests span types under the single-label task.",
+      "id": "EVAL-001"
+    },
+    {
+      "family": "public-planter",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-002"
+    },
+    {
+      "family": "dumped-plus-sorting",
+      "expected_type": null,
+      "review_required": true,
+      "review_group": "mixed",
+      "author_reason": "Distinct active requests span types under the single-label task.",
+      "id": "EVAL-003"
+    },
+    {
+      "family": "opening-hours",
+      "expected_type": "other",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-004"
+    },
+    {
+      "family": "food-storage",
+      "expected_type": "other",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-005"
+    },
+    {
+      "family": "collection-confirmed-later",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-006"
+    },
+    {
+      "family": "creek-furniture",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-007"
+    },
+    {
+      "family": "container-misuse",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-008"
+    },
+    {
+      "family": "residual-contents",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-009"
+    },
+    {
+      "family": "repeated-skip",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-010"
+    },
+    {
+      "family": "access-restored",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-011"
+    },
+    {
+      "family": "new-home-service",
+      "expected_type": "other",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-012"
+    },
+    {
+      "family": "riverbank-deposition",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-013"
+    },
+    {
+      "family": "tagged-skip",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-014"
+    },
+    {
+      "family": "missed-plus-accounts",
+      "expected_type": null,
+      "review_required": true,
+      "review_group": "mixed",
+      "author_reason": "Distinct active requests span types under the single-label task.",
+      "id": "EVAL-015"
+    },
+    {
+      "family": "empty-plot-rubble",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-016"
+    },
+    {
+      "family": "unspecified-service",
+      "expected_type": null,
+      "review_required": true,
+      "review_group": "unclear",
+      "author_reason": "No sufficient current intent; essential context or attachment unavailable.",
+      "id": "EVAL-017"
+    },
+    {
+      "family": "unexplained-request-number",
+      "expected_type": null,
+      "review_required": true,
+      "review_group": "unclear",
+      "author_reason": "No sufficient current intent; essential context or attachment unavailable.",
+      "id": "EVAL-018"
+    },
+    {
+      "family": "stolen-container",
+      "expected_type": "other",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-019"
+    },
+    {
+      "family": "bicycle-path-appliances",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-020"
+    },
+    {
+      "family": "waste-stairwell",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-021"
+    },
+    {
+      "family": "cart-size",
+      "expected_type": "other",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-022"
+    },
+    {
+      "family": "park-screen",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-023"
+    },
+    {
+      "family": "lodged-lid",
+      "expected_type": "other",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-024"
+    },
+    {
+      "family": "communal-skipped",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-025"
+    },
+    {
+      "family": "dumped-plus-recreation",
+      "expected_type": null,
+      "review_required": true,
+      "review_group": "mixed",
+      "author_reason": "Distinct active requests span types under the single-label task.",
+      "id": "EVAL-026"
+    },
+    {
+      "family": "accepted-material",
+      "expected_type": "other",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-027"
+    },
+    {
+      "family": "unauthorised-skip-disposal",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-028"
+    },
+    {
+      "family": "explicit-no-dumping",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-029"
+    },
+    {
+      "family": "recreation-registration",
+      "expected_type": "other",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-030"
+    },
+    {
+      "family": "fee-explanation",
+      "expected_type": "other",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-031"
+    },
+    {
+      "family": "holiday-before-service",
+      "expected_type": "other",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-032"
+    },
+    {
+      "family": "single-compartment",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-033"
+    },
+    {
+      "family": "unclear-still-waiting",
+      "expected_type": null,
+      "review_required": true,
+      "review_group": "unclear",
+      "author_reason": "No sufficient current intent; essential context or attachment unavailable.",
+      "id": "EVAL-034"
+    },
+    {
+      "family": "report-without-location",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-035"
+    },
+    {
+      "family": "unexplained-third-party",
+      "expected_type": null,
+      "review_required": true,
+      "review_group": "unclear",
+      "author_reason": "No sufficient current intent; essential context or attachment unavailable.",
+      "id": "EVAL-036"
+    },
+    {
+      "family": "unexplained-attachment",
+      "expected_type": null,
+      "review_required": true,
+      "review_group": "unclear",
+      "author_reason": "No sufficient current intent; essential context or attachment unavailable.",
+      "id": "EVAL-037"
+    },
+    {
+      "family": "missed-plus-stolen",
+      "expected_type": null,
+      "review_required": true,
+      "review_group": "mixed",
+      "author_reason": "Distinct active requests span types under the single-label task.",
+      "id": "EVAL-038"
+    },
+    {
+      "family": "disposal-hedgerow",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-039"
+    },
+    {
+      "family": "emptied-wrong-premises",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "review_group": null,
+      "author_reason": "Explicit current intent matches the frozen type definition.",
+      "id": "EVAL-040"
+    }
+  ]
+}

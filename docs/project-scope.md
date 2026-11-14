@@ -2,6 +2,10 @@
 
 Initial working scope based on the direction agreed November 6, 2026.
 
+## Scope update — November 14
+
+The original departmental-routing candidate was narrowed to enquiry-type classification because destination ownership was not established. One keyword baseline and one local Qwen2.5 3B model were evaluated, with human review as a separate outcome. No departmental dispatch or answer-generation task was implemented. A separate tracking application was completed as a supporting learning extension and accepted for that purpose, not operational use. The original plan below is retained as context; the [final recommendation](06-evaluation/final-recommendation.md) records the current disposition, results and outstanding final user review. No further app features or logging pilot execution are proposed.
+
 ## Purpose and scenario
 
 Build an interview-ready AI Business Analyst portfolio connecting a business problem to assessment, data readiness, a small experiment, and an evidence-based recommendation.

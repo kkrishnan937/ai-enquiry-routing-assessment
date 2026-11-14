@@ -2,15 +2,34 @@
 
 An independent AI Business Analyst portfolio exploring how a fictional public-service organization can assess AI opportunities and test a recommendation with a small prototype.
 
-Status — November 12, 2026: Discovery and practice-record review are in progress. A supporting enquiry-tracking application (v0.1.1) is runnable locally; eight automated test groups passed, including a timestamp-validation regression. Assisted walkthrough evidence and remaining limitations are documented. The AI use-case comparison, formal data-readiness assessment, AI experiment and final recommendation remain outstanding.
+Status — November 14, 2026: A narrow local AI classification experiment and supporting tracking demonstration are implemented and tested. Options, data readiness, error analysis and an assessment recommendation are documented for final user review. This is a synthetic learning case, not municipal delivery or production deployment.
+
+## Main finding
+
+On 38 frozen synthetic evaluation examples, Qwen2.5 3B correctly classified 22 of 29 clear enquiries, compared with 7 for a simple keyword baseline. However, AI correctly flagged only 4 of 9 unclear/mixed cases for review, compared with 7 for the baseline. It did not meet the pre-agreed review safeguards. Neither tested approach is recommended for operational rollout from this evidence.
+
+Forty evaluation candidates were prepared; two development-overlap cases were excluded before predictions. Synthetic generation, AI-assisted review, remaining semantic-family overlap and the narrow baseline limit the conclusions. Read the [results and limitations](docs/06-evaluation/classification-results-and-recommendation.md), not the headline counts alone.
 
 ## Work available for review
 
 - [Sponsor request and business context](docs/01-plan/sponsor-request-memo.md).
+- [Interview walkthrough](docs/00-interview-walkthrough.md) and [AI assistance/ownership](ai-assistance-and-ownership-log.md).
+- [Options comparison](docs/04-options/evidence-and-data-comparison.md), [data-readiness assessment](docs/04-options/data-readiness-assessment.md) and [final recommendation for review](docs/06-evaluation/final-recommendation.md).
+- [Experiment brief](docs/04-options/classification-experiment-brief.md), [labelling guide](data/labelling-guide.md), [evaluation plan](docs/06-evaluation/classification-evaluation-plan.md) and [classification run guide](prototype/classification/README.md).
 - [Current-state intake summary](docs/03-current-state/intake-process-summary.md) and [connected practice records](docs/03-current-state/practice-records/README.md).
 - [Tracking requirements and acceptance criteria](docs/05-requirements/tracking-prototype-requirements.md).
 - [Seven designed test cases](docs/06-evaluation/tracking-prototype-test-cases.md), [test summary](docs/06-evaluation/tracking-prototype-test-summary.md) and [versioned execution evidence](results/tracking-prototype/README.md).
-- [Synthetic enquiry examples](data/README.md), prepared for discussion rather than a validated evaluation set.
+- [Initial discussion examples](data/README.md), separate from the twenty classification development examples and thirty-eight evaluated examples.
+
+## Reproduce the classification work
+
+The keyword development check uses Python's standard library:
+
+```powershell
+python prototype/classification/run_development.py
+```
+
+AI execution requires a local Ollama installation and the recorded Qwen2.5 3B model. See the [classification guide](prototype/classification/README.md) for commands, model/settings evidence and retained results. The final-run script refuses to overwrite its existing run. Do not rerun a now-seen evaluation set and call the result unseen, or re-run the dataset-preparation script over frozen data.
 
 ## Run the supporting application
 
@@ -29,21 +48,21 @@ Run the automated checks with:
 python prototype/tracking/test_acceptance.py
 ```
 
-This application demonstrates enquiry tracking and handover; it is not the proposed AI routing experiment. Results apply to the local prototype, not a municipality's system. Full business acceptance and a clean manual persistence-test repeat remain outstanding. The [optional Azure pipeline definition](prototype/tracking/azure-pipelines.yml) is supplied but has not been configured or run in Azure DevOps.
+This application demonstrates enquiry tracking and handover; it is separate from the AI classification experiment. It was accepted for its learning purpose in conversation, and a clean assisted browser persistence repeat passed. Results apply to the local prototype, not a municipality's system. Operational guidance publication remains on hold. The [optional Azure pipeline definition](prototype/tracking/azure-pipelines.yml) is supplied but has not been configured or run in Azure DevOps.
 
 ## Business question
 
 Which AI opportunity should the organization pursue first, and what must be ready before it proceeds?
 
-## Planned approach
+## Approach taken
 
 1. Define the citizen-enquiry process, its problems, and the evidence needed to assess them.
 2. Compare enquiry routing, FAQ assistance, and enquiry trend analysis against consistent criteria.
 3. Assess data readiness and consider simpler non-AI alternatives.
-4. Select a narrow prototype task, subject to the assessment.
-5. Compare a simple baseline with an AI approach, document errors, and recommend next steps.
+4. Select a narrow enquiry-type classification task that avoids unverified departmental destinations.
+5. Compare keyword rules with one local AI model, document the observed trade-off and recommend next steps.
 
-Enquiry routing is the initial prototype candidate: suggest a category and responsible team for a synthetic request, with a person reviewing the suggestion. Technology and model choices remain open.
+The initial routing candidate was narrowed to reported enquiry type: missed collection, reported dumped waste, or Other, with a separate review outcome for unclear/mixed requests. The experiment does not decide department ownership or service eligibility.
 
 See [Project scope](docs/project-scope.md) for boundaries and intended evidence.
 
@@ -53,4 +72,4 @@ The assessment is inspired by Deliverable D3 of RFS-230-2026, Use-Case Assessmen
 
 This project is for learning and portfolio purposes only. The municipality, roles, and business scenario are fictional; no real stakeholder interviews or municipal operational measurements have been conducted. Request data will be synthetic. This project is not commissioned by or affiliated with the Government of Saskatchewan or any real agency. This disclosure applies to all project documents and code. Assumptions will be distinguished from measured results, and AI assistance will be disclosed.
 
-Free tools are preferred. No paid licenses are assumed.
+Free tools were used; no paid inference service was used. Hardware, electricity and staff effort were not costed. Final recommendation review, repository/Boards reconciliation and interview rehearsal remain; no further model tuning or tracking features are proposed.

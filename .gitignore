@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+prototype/tracking/local-data/
+*.sqlite
+*.sqlite-*

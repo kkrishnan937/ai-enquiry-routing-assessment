@@ -1,0 +1,988 @@
+{
+  "started_utc": "2026-11-14T20:02:33.209487+00:00",
+  "status": "complete",
+  "scope": "development only; no held-out material; not a final advantage claim",
+  "model": {
+    "name": "qwen2.5:3b",
+    "model": "qwen2.5:3b",
+    "modified_at": "2026-11-14T13:55:04.3606672-06:00",
+    "size": 1929912432,
+    "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "parameter_size": "3.1B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 32768,
+      "embedding_length": 2048,
+      "runner": "ggml"
+    },
+    "capabilities": [
+      "completion",
+      "tools"
+    ]
+  },
+  "ollama_version": {
+    "version": "0.40.16"
+  },
+  "settings": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 2048,
+    "num_predict": 128
+  },
+  "baseline_version": "0.1",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "type": {
+        "enum": [
+          "missed_collection",
+          "reported_dumped_waste",
+          "other",
+          null
+        ]
+      },
+      "review_required": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "type",
+      "review_required"
+    ],
+    "additionalProperties": false
+  },
+  "hashes": {
+    "dataset": "40f99ef3e85060dec76e6aa973dfc0a7ac3fc3bb0458dabc2622918b85d72698",
+    "prompt": "b2a04ce66f6dfd01a04c726cd3a9fbda6f2c52bf665fda3dcd10cb9cc0adc2a5",
+    "baseline": "d794596582b2421254706b7d9660a26e4d66f9f3448f7cb0cdaf55de5468a4a0",
+    "runner": "7139735913246050025aed1bf8f530b345a74b123c0cbe6548be16ac75dc0ec7",
+    "guide": "5aab6566a46f184f50cc109cb4c2a974e4f50106a8a20c17d0349eea1faf89b1"
+  },
+  "examples_sent": "Only enquiry text as user content; fixed system prompt and schema. No expected labels, annotations or identifiers sent.",
+  "predictions": [
+    {
+      "id": "DEV-001",
+      "text": "My garbage cart wasn't emptied yesterday. Can you help?",
+      "expected_type": "missed_collection",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "missed_collection": [
+          "\\b(?:wasn't|was not|weren't|were not|not) (?:emptied|collected)\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:33.9035651Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 636963000,
+        "load_duration": 15718900,
+        "prompt_eval_count": 508,
+        "prompt_eval_cached_count": 5,
+        "prompt_eval_duration": 338301000,
+        "eval_count": 13,
+        "eval_duration": 229628000
+      },
+      "wall_seconds": 0.6545777000137605
+    },
+    {
+      "id": "DEV-002",
+      "text": "Someone left several bags of rubbish on the verge beside our property. They aren't in our collection cart.",
+      "expected_type": "reported_dumped_waste",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "reported_dumped_waste",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "reported_dumped_waste": [
+          "\\bsomeone left\\b.{0,70}\\b(?:bags|rubbish|waste)\\b"
+        ]
+      },
+      "ai": {
+        "type": "reported_dumped_waste",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:34.2756419Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"reported_dumped_waste\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 364371700,
+        "load_duration": 23599000,
+        "prompt_eval_count": 517,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 66611000,
+        "eval_count": 15,
+        "eval_duration": 234721000
+      },
+      "wall_seconds": 0.3698893999680877
+    },
+    {
+      "id": "DEV-003",
+      "text": "The wheel on my garbage cart has broken. Can I get it repaired?",
+      "expected_type": "other",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "other",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "other": [
+          "\\brepair(?:ed)?\\b",
+          "\\b(?:broken|damaged|cracked)\\b"
+        ]
+      },
+      "ai": {
+        "type": "other",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:34.5421177Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"other\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 258576800,
+        "load_duration": 24534600,
+        "prompt_eval_count": 511,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 37629000,
+        "eval_count": 11,
+        "eval_duration": 176878000
+      },
+      "wall_seconds": 0.2661982999998145
+    },
+    {
+      "id": "DEV-004",
+      "text": "There's rubbish outside my house. Can you sort it out?",
+      "expected_type": null,
+      "expected_review": true,
+      "review_group": "unclear",
+      "baseline": {
+        "type": null,
+        "review_required": true
+      },
+      "baseline_patterns": {},
+      "ai": {
+        "type": null,
+        "review_required": true
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:34.8763294Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":null,\"review_required\":true}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 323873700,
+        "load_duration": 17930400,
+        "prompt_eval_count": 509,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 68869000,
+        "eval_count": 11,
+        "eval_duration": 201927000
+      },
+      "wall_seconds": 0.32898489997023717
+    },
+    {
+      "id": "DEV-005",
+      "text": "My cart wasn't emptied, and someone has dumped a sofa beside the lane.",
+      "expected_type": null,
+      "expected_review": true,
+      "review_group": "mixed",
+      "baseline": {
+        "type": null,
+        "review_required": true
+      },
+      "baseline_patterns": {
+        "missed_collection": [
+          "\\b(?:wasn't|was not|weren't|were not|not) (?:emptied|collected)\\b"
+        ],
+        "reported_dumped_waste": [
+          "\\bdump(?:ed|ing)\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:35.2333092Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 348195700,
+        "load_duration": 23831300,
+        "prompt_eval_count": 512,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 59788000,
+        "eval_count": 13,
+        "eval_duration": 218467000
+      },
+      "wall_seconds": 0.35247440001694486
+    },
+    {
+      "id": "DEV-006",
+      "text": "My cart is damaged, but no collection has been missed and no waste has been dumped. How do I get it repaired?",
+      "expected_type": "other",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": null,
+        "review_required": true
+      },
+      "baseline_patterns": {
+        "missed_collection": [
+          "\\bmissed\\b"
+        ],
+        "reported_dumped_waste": [
+          "\\bdump(?:ed|ing)\\b"
+        ],
+        "other": [
+          "\\brepair(?:ed)?\\b",
+          "\\b(?:broken|damaged|cracked)\\b"
+        ]
+      },
+      "ai": {
+        "type": "other",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:35.5486651Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"other\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 291693000,
+        "load_duration": 19785200,
+        "prompt_eval_count": 521,
+        "prompt_eval_cached_count": 493,
+        "prompt_eval_duration": 55252000,
+        "eval_count": 11,
+        "eval_duration": 174278000
+      },
+      "wall_seconds": 0.31338380003580824
+    },
+    {
+      "id": "DEV-007",
+      "text": "The collection truck emptied the first container but left the second one untouched on our scheduled day. I'd like to report the one it left.",
+      "expected_type": "missed_collection",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "missed_collection": [
+          "\\b(?:cart|bin|container)\\b.{0,45}\\b(?:still full|still has everything|untouched)\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:35.909426Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 342337100,
+        "load_duration": 15017000,
+        "prompt_eval_count": 524,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 68270000,
+        "eval_count": 13,
+        "eval_duration": 221827000
+      },
+      "wall_seconds": 0.356762399955187
+    },
+    {
+      "id": "DEV-008",
+      "text": "I checked the calendar and today is pickup day. The truck has finished our street, but my green cart still has everything in it.",
+      "expected_type": "missed_collection",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "missed_collection": [
+          "\\b(?:cart|bin|container)\\b.{0,45}\\b(?:still full|still has everything|untouched)\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:36.2733888Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 342432700,
+        "load_duration": 24552500,
+        "prompt_eval_count": 523,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 64308000,
+        "eval_count": 13,
+        "eval_duration": 209824000
+      },
+      "wall_seconds": 0.35776599997188896
+    },
+    {
+      "id": "DEV-009",
+      "text": "Last year people dumped rubbish here, but that is not my concern now. This morning's scheduled garbage pickup never happened for my cart.",
+      "expected_type": "missed_collection",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": null,
+        "review_required": true
+      },
+      "baseline_patterns": {
+        "missed_collection": [
+          "\\b(?:pickup|collection) (?:never happened|didn't happen|did not happen)\\b"
+        ],
+        "reported_dumped_waste": [
+          "\\bdump(?:ed|ing)\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:36.594731Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 316266000,
+        "load_duration": 13546700,
+        "prompt_eval_count": 523,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 62265000,
+        "eval_count": 13,
+        "eval_duration": 206522000
+      },
+      "wall_seconds": 0.3197580000269227
+    },
+    {
+      "id": "DEV-010",
+      "text": "The crew tried lifting our cart but only half the contents came out. Can you record this as a partial pickup from today's scheduled collection?",
+      "expected_type": "missed_collection",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "missed_collection": [
+          "\\bpartial (?:pickup|collection)\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:36.9349352Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 330194200,
+        "load_duration": 22323800,
+        "prompt_eval_count": 524,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 59186000,
+        "eval_count": 13,
+        "eval_duration": 213307000
+      },
+      "wall_seconds": 0.33463410002877936
+    },
+    {
+      "id": "DEV-011",
+      "text": "I watched a van unload an old mattress onto the vacant plot and drive off. I'd like to report what happened.",
+      "expected_type": "reported_dumped_waste",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "reported_dumped_waste",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "reported_dumped_waste": [
+          "\\b(?:unload(?:ed|ing)?|tipp(?:ed|ing))\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:37.2922789Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 344203300,
+        "load_duration": 26690800,
+        "prompt_eval_count": 520,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 69380000,
+        "eval_count": 13,
+        "eval_duration": 205712000
+      },
+      "wall_seconds": 0.3524037000024691
+    },
+    {
+      "id": "DEV-012",
+      "text": "The public footpath had been clear, but overnight someone tipped building offcuts across it. This isn't about our household pickup.",
+      "expected_type": "reported_dumped_waste",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "reported_dumped_waste",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "reported_dumped_waste": [
+          "\\b(?:unload(?:ed|ing)?|tipp(?:ed|ing))\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:37.6412268Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 332800800,
+        "load_duration": 26436500,
+        "prompt_eval_count": 522,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 55725000,
+        "eval_count": 13,
+        "eval_duration": 204822000
+      },
+      "wall_seconds": 0.34170069999527186
+    },
+    {
+      "id": "DEV-013",
+      "text": "Our usual rubbish was collected normally. My concern is a pile of tyres that somebody has abandoned behind the shops.",
+      "expected_type": "reported_dumped_waste",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "reported_dumped_waste",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "reported_dumped_waste": [
+          "\\babandon(?:ed|ing)\\b"
+        ]
+      },
+      "ai": {
+        "type": "reported_dumped_waste",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:38.0167337Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"reported_dumped_waste\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 355989500,
+        "load_duration": 22554000,
+        "prompt_eval_count": 518,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 50183000,
+        "eval_count": 15,
+        "eval_duration": 244814000
+      },
+      "wall_seconds": 0.3700836999923922
+    },
+    {
+      "id": "DEV-014",
+      "text": "A person emptied sacks from their trailer onto the ground at the edge of the field and left. Where can I report that incident?",
+      "expected_type": "reported_dumped_waste",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "reported_dumped_waste",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "reported_dumped_waste": [
+          "\\bemptied sacks\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:38.360458Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 330919300,
+        "load_duration": 18241000,
+        "prompt_eval_count": 522,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 68718000,
+        "eval_count": 13,
+        "eval_duration": 213318000
+      },
+      "wall_seconds": 0.3358594999881461
+    },
+    {
+      "id": "DEV-015",
+      "text": "The next collection falls on a holiday. Where can I check whether the date changes? Nothing has been missed yet.",
+      "expected_type": "other",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": null,
+        "review_required": true
+      },
+      "baseline_patterns": {
+        "missed_collection": [
+          "\\bmissed\\b"
+        ],
+        "other": [
+          "\\b(?:holiday|date changes|proper disposal)\\b"
+        ]
+      },
+      "ai": {
+        "type": "other",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:38.644298Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"other\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 271667000,
+        "load_duration": 28112900,
+        "prompt_eval_count": 519,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 39218000,
+        "eval_count": 11,
+        "eval_duration": 166213000
+      },
+      "wall_seconds": 0.2774449000135064
+    },
+    {
+      "id": "DEV-016",
+      "text": "My water bill shows a charge I don't recognise. Could someone explain it?",
+      "expected_type": "other",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "other",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "other": [
+          "\\b(?:bill|billing|charge)\\b"
+        ]
+      },
+      "ai": {
+        "type": "other",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:38.9580398Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"other\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 303873800,
+        "load_duration": 20388000,
+        "prompt_eval_count": 512,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 64288000,
+        "eval_count": 11,
+        "eval_duration": 175782000
+      },
+      "wall_seconds": 0.3080241000279784
+    },
+    {
+      "id": "DEV-017",
+      "text": "I have a worn-out chair at home. Where should I take it for proper disposal? I haven't put it outside.",
+      "expected_type": "other",
+      "expected_review": false,
+      "review_group": null,
+      "baseline": {
+        "type": "other",
+        "review_required": false
+      },
+      "baseline_patterns": {
+        "other": [
+          "\\b(?:holiday|date changes|proper disposal)\\b"
+        ]
+      },
+      "ai": {
+        "type": "other",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:39.2871572Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\": \"other\", \"review_required\": false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 314948600,
+        "load_duration": 17608200,
+        "prompt_eval_count": 521,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 54363000,
+        "eval_count": 13,
+        "eval_duration": 217569000
+      },
+      "wall_seconds": 0.32288790005259216
+    },
+    {
+      "id": "DEV-018",
+      "text": "Can someone deal with the waste problem at our place? It is still there.",
+      "expected_type": null,
+      "expected_review": true,
+      "review_group": "unclear",
+      "baseline": {
+        "type": null,
+        "review_required": true
+      },
+      "baseline_patterns": {},
+      "ai": {
+        "type": null,
+        "review_required": true
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:39.6132406Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":null,\"review_required\":true}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 310557600,
+        "load_duration": 21715100,
+        "prompt_eval_count": 512,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 61080000,
+        "eval_count": 11,
+        "eval_duration": 191758000
+      },
+      "wall_seconds": 0.31835549999959767
+    },
+    {
+      "id": "DEV-019",
+      "text": "Our bin wasn't collected on Tuesday. Separately, can you arrange a repair for its cracked lid?",
+      "expected_type": null,
+      "expected_review": true,
+      "review_group": "mixed",
+      "baseline": {
+        "type": null,
+        "review_required": true
+      },
+      "baseline_patterns": {
+        "missed_collection": [
+          "\\b(?:wasn't|was not|weren't|were not|not) (?:emptied|collected)\\b"
+        ],
+        "other": [
+          "\\brepair(?:ed)?\\b",
+          "\\b(?:broken|damaged|cracked)\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:39.9799346Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 354477600,
+        "load_duration": 18818500,
+        "prompt_eval_count": 517,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 76355000,
+        "eval_count": 13,
+        "eval_duration": 220453000
+      },
+      "wall_seconds": 0.36085699999239296
+    },
+    {
+      "id": "DEV-020",
+      "text": "Please report the bags somebody abandoned by the path, and tell me when the next recycling pickup is due.",
+      "expected_type": null,
+      "expected_review": true,
+      "review_group": "mixed",
+      "baseline": {
+        "type": null,
+        "review_required": true
+      },
+      "baseline_patterns": {
+        "reported_dumped_waste": [
+          "\\babandon(?:ed|ing)\\b"
+        ],
+        "other": [
+          "\\b(?:when|what day)\\b.{0,60}\\b(?:pickup|collection)\\b"
+        ]
+      },
+      "ai": {
+        "type": "missed_collection",
+        "review_required": false
+      },
+      "raw_response": {
+        "model": "qwen2.5:3b",
+        "created_at": "2026-11-14T20:02:40.3376517Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\":\"missed_collection\",\"review_required\":false}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 342386800,
+        "load_duration": 27879500,
+        "prompt_eval_count": 517,
+        "prompt_eval_cached_count": 491,
+        "prompt_eval_duration": 63999000,
+        "eval_count": 13,
+        "eval_duration": 213536000
+      },
+      "wall_seconds": 0.3489360000239685
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "total": 20,
+      "matching_outcomes": 17,
+      "classifiable_total": 15,
+      "correct_automatic_classifications": 12,
+      "coverage_count": 12,
+      "coverage_rate": 0.8,
+      "accuracy_among_classified": 1.0,
+      "overall_classifiable_success": 0.8,
+      "review_expected_total": 5,
+      "correct_review_flags": 5,
+      "forced_types_on_review_cases": 0,
+      "invalid_outputs": 0,
+      "review_subsets": {
+        "unclear": {
+          "total": 2,
+          "correct_flags": 2
+        },
+        "mixed": {
+          "total": 3,
+          "correct_flags": 3
+        }
+      },
+      "per_type": {
+        "missed_collection": {
+          "total": 5,
+          "correct": 4
+        },
+        "reported_dumped_waste": {
+          "total": 5,
+          "correct": 5
+        },
+        "other": {
+          "total": 5,
+          "correct": 3
+        }
+      },
+      "confusion_counts": {
+        "missed_collection": {
+          "missed_collection": 4,
+          "review": 1
+        },
+        "reported_dumped_waste": {
+          "reported_dumped_waste": 5
+        },
+        "other": {
+          "other": 3,
+          "review": 2
+        },
+        "review": {
+          "review": 5
+        }
+      }
+    },
+    "ai": {
+      "total": 20,
+      "matching_outcomes": 14,
+      "classifiable_total": 15,
+      "correct_automatic_classifications": 12,
+      "coverage_count": 15,
+      "coverage_rate": 1.0,
+      "accuracy_among_classified": 0.8,
+      "overall_classifiable_success": 0.8,
+      "review_expected_total": 5,
+      "correct_review_flags": 2,
+      "forced_types_on_review_cases": 3,
+      "invalid_outputs": 0,
+      "review_subsets": {
+        "unclear": {
+          "total": 2,
+          "correct_flags": 2
+        },
+        "mixed": {
+          "total": 3,
+          "correct_flags": 0
+        }
+      },
+      "per_type": {
+        "missed_collection": {
+          "total": 5,
+          "correct": 5
+        },
+        "reported_dumped_waste": {
+          "total": 5,
+          "correct": 2
+        },
+        "other": {
+          "total": 5,
+          "correct": 5
+        }
+      },
+      "confusion_counts": {
+        "missed_collection": {
+          "missed_collection": 5
+        },
+        "reported_dumped_waste": {
+          "reported_dumped_waste": 2,
+          "missed_collection": 3
+        },
+        "other": {
+          "other": 5
+        },
+        "review": {
+          "review": 2,
+          "missed_collection": 3
+        }
+      }
+    }
+  },
+  "runtime": {
+    "total_seconds": 6.990982000075746,
+    "median_seconds_per_request": 0.338780099991709,
+    "min_seconds": 0.2661982999998145,
+    "max_seconds": 0.6545777000137605,
+    "note": "Sequential local requests; includes any load/warmup; shared prompt may be cached. Not staff effort or production latency."
+  },
+  "active_runners_after": {
+    "models": [
+      {
+        "name": "qwen2.5:3b",
+        "model": "qwen2.5:3b",
+        "size": 2085974179,
+        "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "3.1B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-14T14:07:40.3384301-06:00",
+        "size_vram": 2085974179,
+        "context_length": 2048,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "completed_utc": "2026-11-14T20:02:40.350864+00:00"
+}

@@ -1,0 +1,204 @@
+{
+  "version": "0.1",
+  "prepared": "2026-11-14",
+  "split": "development",
+  "status": "All 20 development labels reviewed/accepted for development use on November 14; not independent validation or held-out evidence.",
+  "provenance": "Assistant-authored synthetic examples. Nine discussed with user/coaching; eleven assistant-checked labels explicitly accepted by user as a batch. Per-example history discloses corrections and prior label exposure. No independent domain validation.",
+  "guide": "data/labelling-guide.md",
+  "examples": [
+    {
+      "id": "DEV-001",
+      "text": "My garbage cart wasn't emptied yesterday. Can you help?",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "annotation_reason": "Clear report of expected collection not happening; missing address is separate.",
+      "review_status": "coached_review",
+      "review_group": null
+    },
+    {
+      "id": "DEV-002",
+      "text": "Someone left several bags of rubbish on the verge beside our property. They aren't in our collection cart.",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "annotation_reason": "Reports allegedly deposited waste separately from the resident's cart.",
+      "review_status": "coached_review",
+      "review_group": null
+    },
+    {
+      "id": "DEV-003",
+      "text": "The wheel on my garbage cart has broken. Can I get it repaired?",
+      "expected_type": "other",
+      "review_required": false,
+      "annotation_reason": "Clear cart-repair request, not missed collection or dumped waste.",
+      "review_status": "coached_review",
+      "review_group": null
+    },
+    {
+      "id": "DEV-004",
+      "text": "There's rubbish outside my house. Can you sort it out?",
+      "expected_type": null,
+      "review_required": true,
+      "annotation_reason": "Location alone does not establish whether this is missed collection, deposited waste or another issue.",
+      "review_status": "coached_review",
+      "review_group": "unclear"
+    },
+    {
+      "id": "DEV-005",
+      "text": "My cart wasn't emptied, and someone has dumped a sofa beside the lane.",
+      "expected_type": null,
+      "review_required": true,
+      "annotation_reason": "Two distinct active target reports cannot be represented by one type.",
+      "review_status": "coached_review",
+      "review_group": "mixed"
+    },
+    {
+      "id": "DEV-006",
+      "text": "My cart is damaged, but no collection has been missed and no waste has been dumped. How do I get it repaired?",
+      "expected_type": "other",
+      "review_required": false,
+      "annotation_reason": "Active request is repair; missed collection and dumping are negated.",
+      "review_status": "coached_review",
+      "review_group": null
+    },
+    {
+      "id": "DEV-007",
+      "text": "The collection truck emptied the first container but left the second one untouched on our scheduled day. I'd like to report the one it left.",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "annotation_reason": "Partial scheduled collection is the explicit reported concern.",
+      "review_status": "user_agreed_after_proposed_label",
+      "review_group": null,
+      "review_note": "User agreed missed collection because one container was left untouched. Coached review, not blind agreement."
+    },
+    {
+      "id": "DEV-008",
+      "text": "I checked the calendar and today is pickup day. The truck has finished our street, but my green cart still has everything in it.",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "annotation_reason": "Context establishes reported missed expected collection; no eligibility conclusion.",
+      "review_status": "user_agreed_after_correction",
+      "review_group": null,
+      "review_note": "User initially chose human review, then agreed missed collection after coaching on clear reported intent. No cause or eligibility finding."
+    },
+    {
+      "id": "DEV-009",
+      "text": "Last year people dumped rubbish here, but that is not my concern now. This morning's scheduled garbage pickup never happened for my cart.",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "annotation_reason": "Historical dumping is not an active report; current concern is missed collection.",
+      "review_status": "user_label_matches_proposal",
+      "review_group": null,
+      "review_note": "User selected missed collection based on current missed pickup, distinguishing historical dumping context. User had prior access to proposed labels; not blind review."
+    },
+    {
+      "id": "DEV-010",
+      "text": "The crew tried lifting our cart but only half the contents came out. Can you record this as a partial pickup from today's scheduled collection?",
+      "expected_type": "missed_collection",
+      "review_required": false,
+      "annotation_reason": "Explicit partial-collection report; cause and return-service entitlement are not inferred.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": null,
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    },
+    {
+      "id": "DEV-011",
+      "text": "I watched a van unload an old mattress onto the vacant plot and drive off. I'd like to report what happened.",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "annotation_reason": "Explicit alleged deposition of waste.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": null,
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    },
+    {
+      "id": "DEV-012",
+      "text": "The public footpath had been clear, but overnight someone tipped building offcuts across it. This isn't about our household pickup.",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "annotation_reason": "Describes allegedly deposited materials; collection concern is negated.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": null,
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    },
+    {
+      "id": "DEV-013",
+      "text": "Our usual rubbish was collected normally. My concern is a pile of tyres that somebody has abandoned behind the shops.",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "annotation_reason": "Current active concern is alleged abandoned waste; completed collection is context.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": null,
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    },
+    {
+      "id": "DEV-014",
+      "text": "A person emptied sacks from their trailer onto the ground at the edge of the field and left. Where can I report that incident?",
+      "expected_type": "reported_dumped_waste",
+      "review_required": false,
+      "annotation_reason": "Clear alleged disposal incident, without a legal determination.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": null,
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    },
+    {
+      "id": "DEV-015",
+      "text": "The next collection falls on a holiday. Where can I check whether the date changes? Nothing has been missed yet.",
+      "expected_type": "other",
+      "review_required": false,
+      "annotation_reason": "Schedule-information request; no actual missed collection reported.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": null,
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    },
+    {
+      "id": "DEV-016",
+      "text": "My water bill shows a charge I don't recognise. Could someone explain it?",
+      "expected_type": "other",
+      "review_required": false,
+      "annotation_reason": "Clear billing topic outside the two target types.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": null,
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    },
+    {
+      "id": "DEV-017",
+      "text": "I have a worn-out chair at home. Where should I take it for proper disposal? I haven't put it outside.",
+      "expected_type": "other",
+      "review_required": false,
+      "annotation_reason": "Disposal-advice request, not a report of dumped waste.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": null,
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    },
+    {
+      "id": "DEV-018",
+      "text": "Can someone deal with the waste problem at our place? It is still there.",
+      "expected_type": null,
+      "review_required": true,
+      "annotation_reason": "Insufficient context to establish the reported type.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": "unclear",
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    },
+    {
+      "id": "DEV-019",
+      "text": "Our bin wasn't collected on Tuesday. Separately, can you arrange a repair for its cracked lid?",
+      "expected_type": null,
+      "review_required": true,
+      "annotation_reason": "Distinct missed-collection and repair requests span target and Other types.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": "mixed",
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    },
+    {
+      "id": "DEV-020",
+      "text": "Please report the bags somebody abandoned by the path, and tell me when the next recycling pickup is due.",
+      "expected_type": null,
+      "review_required": true,
+      "annotation_reason": "Distinct dumped-waste report and schedule-information request.",
+      "review_status": "user_accepted_assistant_batch_proposal",
+      "review_group": "mixed",
+      "review_note": "Assistant checked label against guide v0.1; user reviewed displayed summaries and explicitly accepted the eleven-label batch on November 14. Not blind or independent domain review."
+    }
+  ]
+}

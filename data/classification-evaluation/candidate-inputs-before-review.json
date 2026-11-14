@@ -1,0 +1,166 @@
+{
+  "split": "held_out_candidate",
+  "status": "Authored after approach freeze; unscored; review pending",
+  "examples": [
+    {
+      "id": "EVAL-001",
+      "text": "Please log yesterday's uncompleted household waste round and a separate incident in which a driver threw building rubble into the creek."
+    },
+    {
+      "id": "EVAL-002",
+      "text": "An unknown person has used the large public planter as a place to discard household refuse. There are food wrappers and household bags packed into it."
+    },
+    {
+      "id": "EVAL-003",
+      "text": "Someone tipped renovation waste onto the public green. I also have a separate question about which plastics can be recycled at home."
+    },
+    {
+      "id": "EVAL-004",
+      "text": "What are the disposal facility's opening hours on a weekday?"
+    },
+    {
+      "id": "EVAL-005",
+      "text": "Could you suggest how to keep food scraps from smelling between normal collections?"
+    },
+    {
+      "id": "EVAL-006",
+      "text": "I waited until the end of collection day to check. The designated refuse container at our building has not been serviced at all."
+    },
+    {
+      "id": "EVAL-007",
+      "text": "Furniture has been tipped into the creek behind the recreation ground. A neighbour witnessed it being pushed from a vehicle."
+    },
+    {
+      "id": "EVAL-008",
+      "text": "I witnessed a business tipping its refuse into the park's public litter container without permission, instead of arranging disposal. I want to report that action."
+    },
+    {
+      "id": "EVAL-009",
+      "text": "Following this morning's collection visit, the bottom section of the container is still packed with refuse. I am reporting that it was only partly emptied."
+    },
+    {
+      "id": "EVAL-010",
+      "text": "This is the second scheduled round in succession when our household rubbish has been left behind. Could this recurring failure be recorded?"
+    },
+    {
+      "id": "EVAL-011",
+      "text": "Access to our refuse container was restored before the scheduled vehicle arrived, but the operator passed it without taking the contents. I want to report the skipped pickup."
+    },
+    {
+      "id": "EVAL-012",
+      "text": "We have just moved into a newly built home. How do we register for the normal waste service?"
+    },
+    {
+      "id": "EVAL-013",
+      "text": "I saw a contractor discharge a load of broken plasterboard down the riverbank instead of using a disposal facility. Please record this report."
+    },
+    {
+      "id": "EVAL-014",
+      "text": "I found a tag on my refuse container after the round. Its contents were not taken. Please log the uncompleted collection; I am not asking you to decide whether a return visit is owed."
+    },
+    {
+      "id": "EVAL-015",
+      "text": "The last expected pickup did not happen for our property. Separately, please explain the waste-service fee on my account."
+    },
+    {
+      "id": "EVAL-016",
+      "text": "There is a newly abandoned heap of demolition rubble on the empty lot; I saw people carrying it from a renovation and leaving it there."
+    },
+    {
+      "id": "EVAL-017",
+      "text": "Something went wrong with the waste service today. Can you look into it?"
+    },
+    {
+      "id": "EVAL-018",
+      "text": "Could you reopen my previous waste case? I do not have any other details here."
+    },
+    {
+      "id": "EVAL-019",
+      "text": "Our empty rubbish container disappeared from the garage. How do I request a replacement for a stolen container?"
+    },
+    {
+      "id": "EVAL-020",
+      "text": "Two discarded washing machines have been abandoned across the cycle path. They were not placed there for an arranged collection."
+    },
+    {
+      "id": "EVAL-021",
+      "text": "Somebody has dumped unwanted household belongings in the public stairwell by the pedestrian bridge. Please take a report about that incident."
+    },
+    {
+      "id": "EVAL-022",
+      "text": "I want to change to a smaller household waste container. What is the process for requesting a size change?"
+    },
+    {
+      "id": "EVAL-023",
+      "text": "An old television has been deliberately discarded in the flower bed at the park entrance. It is not awaiting any scheduled pickup."
+    },
+    {
+      "id": "EVAL-024",
+      "text": "The hinge has snapped off our container lid. I am only asking about a replacement part, not collection or rubbish left elsewhere."
+    },
+    {
+      "id": "EVAL-025",
+      "text": "Every waste container at our small apartment building was skipped on the advertised collection day, although the rest of the block was served."
+    },
+    {
+      "id": "EVAL-026",
+      "text": "I need to report a discarded freezer deliberately left on the public footpath, and I would also like instructions for registering for an exercise class."
+    },
+    {
+      "id": "EVAL-027",
+      "text": "Can clean aluminium foil go into household recycling? I only need sorting advice."
+    },
+    {
+      "id": "EVAL-028",
+      "text": "Someone used our construction skip without permission to get rid of their household rubbish. We are reporting that disposal incident, not a problem with the collection round."
+    },
+    {
+      "id": "EVAL-029",
+      "text": "Nobody has left extra rubbish at our home. The issue is that the booked waste round failed to empty our container."
+    },
+    {
+      "id": "EVAL-030",
+      "text": "How can I register my child for municipal swimming lessons?"
+    },
+    {
+      "id": "EVAL-031",
+      "text": "Please explain how the waste-service charge is calculated for different container sizes."
+    },
+    {
+      "id": "EVAL-032",
+      "text": "I am planning ahead for next month's public holiday and need the revised service calendar. There has been no failed pickup."
+    },
+    {
+      "id": "EVAL-033",
+      "text": "The collection vehicle took the waste from one compartment of our shared container and drove away leaving the other compartment full. This is a report about that incomplete service."
+    },
+    {
+      "id": "EVAL-034",
+      "text": "Any update on our waste request? We are still waiting."
+    },
+    {
+      "id": "EVAL-035",
+      "text": "Could you log an uncompleted scheduled rubbish pickup? I can supply the service location when you contact me."
+    },
+    {
+      "id": "EVAL-036",
+      "text": "The neighbours told us to contact you about the refuse situation, but I do not know what happened."
+    },
+    {
+      "id": "EVAL-037",
+      "text": "Please see the attachment about the rubbish issue. I need help with it."
+    },
+    {
+      "id": "EVAL-038",
+      "text": "Our scheduled refuse service left the full container behind. In a separate matter, another container has been stolen and needs replacement."
+    },
+    {
+      "id": "EVAL-039",
+      "text": "A load of domestic waste has been deliberately thrown into the hedge surrounding the sports field. It is not material waiting for our normal service."
+    },
+    {
+      "id": "EVAL-040",
+      "text": "The vehicle stopped at the property next door instead of ours during yesterday's round. Our container was never serviced."
+    }
+  ]
+}

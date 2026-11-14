@@ -1,0 +1,375 @@
+{
+  "executed_utc": "2026-11-14T19:46:28.045453+00:00",
+  "scope": "development only; not held-out performance",
+  "baseline_version": "0.1",
+  "dataset_sha256": "40f99ef3e85060dec76e6aa973dfc0a7ac3fc3bb0458dabc2622918b85d72698",
+  "baseline_sha256": "d794596582b2421254706b7d9660a26e4d66f9f3448f7cb0cdaf55de5468a4a0",
+  "summary": {
+    "total": 20,
+    "matching_outcomes": 17,
+    "classifiable_total": 15,
+    "correct_automatic_classifications": 12,
+    "classifiable_receiving_type": 12,
+    "review_expected_total": 5,
+    "correct_review_flags": 5,
+    "forced_types_on_review_cases": 0
+  },
+  "predictions": [
+    {
+      "id": "DEV-001",
+      "text": "My garbage cart wasn't emptied yesterday. Can you help?",
+      "expected_type": "missed_collection",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "missed_collection",
+        "review_required": false,
+        "matched_patterns": {
+          "missed_collection": [
+            "\\b(?:wasn't|was not|weren't|were not|not) (?:emptied|collected)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-002",
+      "text": "Someone left several bags of rubbish on the verge beside our property. They aren't in our collection cart.",
+      "expected_type": "reported_dumped_waste",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "reported_dumped_waste",
+        "review_required": false,
+        "matched_patterns": {
+          "reported_dumped_waste": [
+            "\\bsomeone left\\b.{0,70}\\b(?:bags|rubbish|waste)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-003",
+      "text": "The wheel on my garbage cart has broken. Can I get it repaired?",
+      "expected_type": "other",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "other",
+        "review_required": false,
+        "matched_patterns": {
+          "other": [
+            "\\brepair(?:ed)?\\b",
+            "\\b(?:broken|damaged|cracked)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-004",
+      "text": "There's rubbish outside my house. Can you sort it out?",
+      "expected_type": null,
+      "expected_review": true,
+      "review_group": "unclear",
+      "prediction": {
+        "type": null,
+        "review_required": true,
+        "matched_patterns": {}
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-005",
+      "text": "My cart wasn't emptied, and someone has dumped a sofa beside the lane.",
+      "expected_type": null,
+      "expected_review": true,
+      "review_group": "mixed",
+      "prediction": {
+        "type": null,
+        "review_required": true,
+        "matched_patterns": {
+          "missed_collection": [
+            "\\b(?:wasn't|was not|weren't|were not|not) (?:emptied|collected)\\b"
+          ],
+          "reported_dumped_waste": [
+            "\\bdump(?:ed|ing)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-006",
+      "text": "My cart is damaged, but no collection has been missed and no waste has been dumped. How do I get it repaired?",
+      "expected_type": "other",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": null,
+        "review_required": true,
+        "matched_patterns": {
+          "missed_collection": [
+            "\\bmissed\\b"
+          ],
+          "reported_dumped_waste": [
+            "\\bdump(?:ed|ing)\\b"
+          ],
+          "other": [
+            "\\brepair(?:ed)?\\b",
+            "\\b(?:broken|damaged|cracked)\\b"
+          ]
+        }
+      },
+      "matches_expected": false
+    },
+    {
+      "id": "DEV-007",
+      "text": "The collection truck emptied the first container but left the second one untouched on our scheduled day. I'd like to report the one it left.",
+      "expected_type": "missed_collection",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "missed_collection",
+        "review_required": false,
+        "matched_patterns": {
+          "missed_collection": [
+            "\\b(?:cart|bin|container)\\b.{0,45}\\b(?:still full|still has everything|untouched)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-008",
+      "text": "I checked the calendar and today is pickup day. The truck has finished our street, but my green cart still has everything in it.",
+      "expected_type": "missed_collection",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "missed_collection",
+        "review_required": false,
+        "matched_patterns": {
+          "missed_collection": [
+            "\\b(?:cart|bin|container)\\b.{0,45}\\b(?:still full|still has everything|untouched)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-009",
+      "text": "Last year people dumped rubbish here, but that is not my concern now. This morning's scheduled garbage pickup never happened for my cart.",
+      "expected_type": "missed_collection",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": null,
+        "review_required": true,
+        "matched_patterns": {
+          "missed_collection": [
+            "\\b(?:pickup|collection) (?:never happened|didn't happen|did not happen)\\b"
+          ],
+          "reported_dumped_waste": [
+            "\\bdump(?:ed|ing)\\b"
+          ]
+        }
+      },
+      "matches_expected": false
+    },
+    {
+      "id": "DEV-010",
+      "text": "The crew tried lifting our cart but only half the contents came out. Can you record this as a partial pickup from today's scheduled collection?",
+      "expected_type": "missed_collection",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "missed_collection",
+        "review_required": false,
+        "matched_patterns": {
+          "missed_collection": [
+            "\\bpartial (?:pickup|collection)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-011",
+      "text": "I watched a van unload an old mattress onto the vacant plot and drive off. I'd like to report what happened.",
+      "expected_type": "reported_dumped_waste",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "reported_dumped_waste",
+        "review_required": false,
+        "matched_patterns": {
+          "reported_dumped_waste": [
+            "\\b(?:unload(?:ed|ing)?|tipp(?:ed|ing))\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-012",
+      "text": "The public footpath had been clear, but overnight someone tipped building offcuts across it. This isn't about our household pickup.",
+      "expected_type": "reported_dumped_waste",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "reported_dumped_waste",
+        "review_required": false,
+        "matched_patterns": {
+          "reported_dumped_waste": [
+            "\\b(?:unload(?:ed|ing)?|tipp(?:ed|ing))\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-013",
+      "text": "Our usual rubbish was collected normally. My concern is a pile of tyres that somebody has abandoned behind the shops.",
+      "expected_type": "reported_dumped_waste",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "reported_dumped_waste",
+        "review_required": false,
+        "matched_patterns": {
+          "reported_dumped_waste": [
+            "\\babandon(?:ed|ing)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-014",
+      "text": "A person emptied sacks from their trailer onto the ground at the edge of the field and left. Where can I report that incident?",
+      "expected_type": "reported_dumped_waste",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "reported_dumped_waste",
+        "review_required": false,
+        "matched_patterns": {
+          "reported_dumped_waste": [
+            "\\bemptied sacks\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-015",
+      "text": "The next collection falls on a holiday. Where can I check whether the date changes? Nothing has been missed yet.",
+      "expected_type": "other",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": null,
+        "review_required": true,
+        "matched_patterns": {
+          "missed_collection": [
+            "\\bmissed\\b"
+          ],
+          "other": [
+            "\\b(?:holiday|date changes|proper disposal)\\b"
+          ]
+        }
+      },
+      "matches_expected": false
+    },
+    {
+      "id": "DEV-016",
+      "text": "My water bill shows a charge I don't recognise. Could someone explain it?",
+      "expected_type": "other",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "other",
+        "review_required": false,
+        "matched_patterns": {
+          "other": [
+            "\\b(?:bill|billing|charge)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-017",
+      "text": "I have a worn-out chair at home. Where should I take it for proper disposal? I haven't put it outside.",
+      "expected_type": "other",
+      "expected_review": false,
+      "review_group": null,
+      "prediction": {
+        "type": "other",
+        "review_required": false,
+        "matched_patterns": {
+          "other": [
+            "\\b(?:holiday|date changes|proper disposal)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-018",
+      "text": "Can someone deal with the waste problem at our place? It is still there.",
+      "expected_type": null,
+      "expected_review": true,
+      "review_group": "unclear",
+      "prediction": {
+        "type": null,
+        "review_required": true,
+        "matched_patterns": {}
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-019",
+      "text": "Our bin wasn't collected on Tuesday. Separately, can you arrange a repair for its cracked lid?",
+      "expected_type": null,
+      "expected_review": true,
+      "review_group": "mixed",
+      "prediction": {
+        "type": null,
+        "review_required": true,
+        "matched_patterns": {
+          "missed_collection": [
+            "\\b(?:wasn't|was not|weren't|were not|not) (?:emptied|collected)\\b"
+          ],
+          "other": [
+            "\\brepair(?:ed)?\\b",
+            "\\b(?:broken|damaged|cracked)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    },
+    {
+      "id": "DEV-020",
+      "text": "Please report the bags somebody abandoned by the path, and tell me when the next recycling pickup is due.",
+      "expected_type": null,
+      "expected_review": true,
+      "review_group": "mixed",
+      "prediction": {
+        "type": null,
+        "review_required": true,
+        "matched_patterns": {
+          "reported_dumped_waste": [
+            "\\babandon(?:ed|ing)\\b"
+          ],
+          "other": [
+            "\\b(?:when|what day)\\b.{0,60}\\b(?:pickup|collection)\\b"
+          ]
+        }
+      },
+      "matches_expected": true
+    }
+  ]
+}

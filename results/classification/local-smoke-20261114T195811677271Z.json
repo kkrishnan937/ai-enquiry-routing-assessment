@@ -1,0 +1,90 @@
+{
+  "executed_utc": "2026-11-14T19:58:11.656068+00:00",
+  "scope": "one known development example; verifies execution/format, not accuracy or advantage",
+  "ollama_version": {
+    "version": "0.40.16"
+  },
+  "model": {
+    "name": "qwen2.5:3b",
+    "model": "qwen2.5:3b",
+    "modified_at": "2026-11-14T13:55:04.3606672-06:00",
+    "size": 1929912432,
+    "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "parameter_size": "3.1B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 32768,
+      "embedding_length": 2048,
+      "runner": "ggml"
+    },
+    "capabilities": [
+      "completion",
+      "tools"
+    ]
+  },
+  "active_runners": {
+    "models": [
+      {
+        "name": "qwen2.5:3b",
+        "model": "qwen2.5:3b",
+        "size": 2085974179,
+        "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "3.1B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-14T14:03:11.6546936-06:00",
+        "size_vram": 2085974179,
+        "context_length": 2048,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "prompt_sha256": "e27cedb8a05e5cfc97188e671ceea1bd1cc7995a9433913e2e5359f48b1d2560",
+  "input": {
+    "id": "DEV-001",
+    "text": "My garbage cart wasn't emptied yesterday. Can you help?"
+  },
+  "settings": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 2048,
+    "num_predict": 128
+  },
+  "response": {
+    "model": "qwen2.5:3b",
+    "created_at": "2026-11-14T19:58:11.6538926Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"type\": \"missed_collection\",\n  \"review_required\": false\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 479994800,
+    "load_duration": 25695000,
+    "prompt_eval_count": 293,
+    "prompt_eval_cached_count": 292,
+    "prompt_eval_duration": 129294999,
+    "eval_count": 19,
+    "eval_duration": 297978000
+  },
+  "prediction": {
+    "type": "missed_collection",
+    "review_required": false
+  },
+  "wall_seconds": 0.4840286000398919,
+  "valid_output": true,
+  "matches_development_label": true
+}

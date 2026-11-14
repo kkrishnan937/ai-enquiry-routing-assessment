@@ -1,0 +1,205 @@
+{
+  "method": "Character similarity screen plus explicit scenario-family authoring; not proof of semantic independence.",
+  "checks": [
+    {
+      "id": "EVAL-001",
+      "closest_development_id": "DEV-020",
+      "character_similarity": 0.357
+    },
+    {
+      "id": "EVAL-002",
+      "closest_development_id": "DEV-018",
+      "character_similarity": 0.396
+    },
+    {
+      "id": "EVAL-003",
+      "closest_development_id": "DEV-014",
+      "character_similarity": 0.434
+    },
+    {
+      "id": "EVAL-004",
+      "closest_development_id": "DEV-017",
+      "character_similarity": 0.321
+    },
+    {
+      "id": "EVAL-005",
+      "closest_development_id": "DEV-010",
+      "character_similarity": 0.327
+    },
+    {
+      "id": "EVAL-006",
+      "closest_development_id": "DEV-015",
+      "character_similarity": 0.492
+    },
+    {
+      "id": "EVAL-007",
+      "closest_development_id": "DEV-012",
+      "character_similarity": 0.337
+    },
+    {
+      "id": "EVAL-008",
+      "closest_development_id": "DEV-007",
+      "character_similarity": 0.397
+    },
+    {
+      "id": "EVAL-009",
+      "closest_development_id": "DEV-007",
+      "character_similarity": 0.42
+    },
+    {
+      "id": "EVAL-010",
+      "closest_development_id": "DEV-003",
+      "character_similarity": 0.366
+    },
+    {
+      "id": "EVAL-011",
+      "closest_development_id": "DEV-014",
+      "character_similarity": 0.38
+    },
+    {
+      "id": "EVAL-012",
+      "closest_development_id": "DEV-017",
+      "character_similarity": 0.433
+    },
+    {
+      "id": "EVAL-013",
+      "closest_development_id": "DEV-011",
+      "character_similarity": 0.384
+    },
+    {
+      "id": "EVAL-014",
+      "closest_development_id": "DEV-017",
+      "character_similarity": 0.33
+    },
+    {
+      "id": "EVAL-015",
+      "closest_development_id": "DEV-019",
+      "character_similarity": 0.419
+    },
+    {
+      "id": "EVAL-016",
+      "closest_development_id": "DEV-020",
+      "character_similarity": 0.4
+    },
+    {
+      "id": "EVAL-017",
+      "closest_development_id": "DEV-004",
+      "character_similarity": 0.413
+    },
+    {
+      "id": "EVAL-018",
+      "closest_development_id": "DEV-018",
+      "character_similarity": 0.427
+    },
+    {
+      "id": "EVAL-019",
+      "closest_development_id": "DEV-006",
+      "character_similarity": 0.427
+    },
+    {
+      "id": "EVAL-020",
+      "closest_development_id": "DEV-010",
+      "character_similarity": 0.421
+    },
+    {
+      "id": "EVAL-021",
+      "closest_development_id": "DEV-014",
+      "character_similarity": 0.412
+    },
+    {
+      "id": "EVAL-022",
+      "closest_development_id": "DEV-017",
+      "character_similarity": 0.375
+    },
+    {
+      "id": "EVAL-023",
+      "closest_development_id": "DEV-018",
+      "character_similarity": 0.436
+    },
+    {
+      "id": "EVAL-024",
+      "closest_development_id": "DEV-010",
+      "character_similarity": 0.39
+    },
+    {
+      "id": "EVAL-025",
+      "closest_development_id": "DEV-015",
+      "character_similarity": 0.346
+    },
+    {
+      "id": "EVAL-026",
+      "closest_development_id": "DEV-020",
+      "character_similarity": 0.42
+    },
+    {
+      "id": "EVAL-027",
+      "closest_development_id": "DEV-011",
+      "character_similarity": 0.307
+    },
+    {
+      "id": "EVAL-028",
+      "closest_development_id": "DEV-010",
+      "character_similarity": 0.372
+    },
+    {
+      "id": "EVAL-029",
+      "closest_development_id": "DEV-002",
+      "character_similarity": 0.409
+    },
+    {
+      "id": "EVAL-030",
+      "closest_development_id": "DEV-016",
+      "character_similarity": 0.318
+    },
+    {
+      "id": "EVAL-031",
+      "closest_development_id": "DEV-018",
+      "character_similarity": 0.388
+    },
+    {
+      "id": "EVAL-032",
+      "closest_development_id": "DEV-015",
+      "character_similarity": 0.468
+    },
+    {
+      "id": "EVAL-033",
+      "closest_development_id": "DEV-007",
+      "character_similarity": 0.449
+    },
+    {
+      "id": "EVAL-034",
+      "closest_development_id": "DEV-018",
+      "character_similarity": 0.46
+    },
+    {
+      "id": "EVAL-035",
+      "closest_development_id": "DEV-008",
+      "character_similarity": 0.38
+    },
+    {
+      "id": "EVAL-036",
+      "closest_development_id": "DEV-011",
+      "character_similarity": 0.447
+    },
+    {
+      "id": "EVAL-037",
+      "closest_development_id": "DEV-004",
+      "character_similarity": 0.384
+    },
+    {
+      "id": "EVAL-038",
+      "closest_development_id": "DEV-015",
+      "character_similarity": 0.359
+    },
+    {
+      "id": "EVAL-039",
+      "closest_development_id": "DEV-012",
+      "character_similarity": 0.429
+    },
+    {
+      "id": "EVAL-040",
+      "closest_development_id": "DEV-008",
+      "character_similarity": 0.378
+    }
+  ]
+}

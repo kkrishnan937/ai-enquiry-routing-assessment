@@ -1,0 +1,17 @@
+{
+  "status": "frozen_before_predictions",
+  "frozen_utc": "2026-11-14T20:08:16.724202+00:00",
+  "retained_count": 38,
+  "planned_count": 40,
+  "excluded_count": 2,
+  "dataset_hashes": {
+    "inputs.json": "48233d8c25bd2ca184157d32cf374f616588cef606eddb8b390516e91985ce82",
+    "reviewed-labels.json": "b4f66ef158ae068efa5553e5fd8ed0fc3efd62534df0bd406dfc0b1d07e996fb",
+    "second-pass-review.json": "d88b8100291f9cdae57d15adf32ec1b744b27dce5f127a9c6191d8e9ab9bcc9d",
+    "adjudication.json": "4c3f867da6d3288cae0e670fc4fc9465b1085463568298b72ce1eb2a70d509f2",
+    "candidate-inputs-before-review.json": "ebce8e2b9ee4f254a755a24fd56e2db08d41ec1c1627b008a44b54fb1b7af5d6",
+    "author-labels.json": "124862a2225e6449d33a2b0f44a6bc0cc8976ef4b80c469b89e73cff29d9c984",
+    "frozen-approach/manifest.json": "adbeeb5ec25fa76b4742cbe14881f0eb2dc3f1d3f9b8122a944919c230c23951"
+  },
+  "review_limit": "AI second pass, instruction-separated author labels, no independent municipal validation; full scenario-family disjointness not established."
+}

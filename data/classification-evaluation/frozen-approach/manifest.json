@@ -1,0 +1,44 @@
+{
+  "frozen_utc": "2026-11-14T20:05:32.852806+00:00",
+  "purpose": "Freeze approach before authoring held-out candidates; labels still require second-pass review.",
+  "model": "qwen2.5:3b",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "settings": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 2048,
+    "num_predict": 128
+  },
+  "files": [
+    {
+      "source": "data/labelling-guide.md",
+      "snapshot": "labelling-guide.md",
+      "sha256": "5aab6566a46f184f50cc109cb4c2a974e4f50106a8a20c17d0349eea1faf89b1"
+    },
+    {
+      "source": "docs/06-evaluation/classification-evaluation-plan.md",
+      "snapshot": "classification-evaluation-plan.md",
+      "sha256": "a6c7c69005f2c84ab78f4275bfc18fb73870d2e83e92f225ca32ec2a1fab9468"
+    },
+    {
+      "source": "docs/06-evaluation/classification-dataset-plan.md",
+      "snapshot": "classification-dataset-plan.md",
+      "sha256": "d6d47295d683e337253f35b749356b85d469b44102e312eed3f1ba61ba6421f4"
+    },
+    {
+      "source": "prototype/classification/keyword_baseline.py",
+      "snapshot": "keyword_baseline.py",
+      "sha256": "d794596582b2421254706b7d9660a26e4d66f9f3448f7cb0cdaf55de5468a4a0"
+    },
+    {
+      "source": "prototype/classification/classification-prompt.txt",
+      "snapshot": "classification-prompt.txt",
+      "sha256": "b2a04ce66f6dfd01a04c726cd3a9fbda6f2c52bf665fda3dcd10cb9cc0adc2a5"
+    },
+    {
+      "source": "prototype/classification/run_ai_development.py",
+      "snapshot": "run_ai_development.py",
+      "sha256": "7139735913246050025aed1bf8f530b345a74b123c0cbe6548be16ac75dc0ec7"
+    }
+  ]
+}

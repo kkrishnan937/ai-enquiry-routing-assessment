@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-14",
+  "author_reviewer_label_disagreements": 0,
+  "unresolved_labels": 0,
+  "exclusions": {
+    "EVAL-001": "Mixed-target structural overlap with coached example; reviewer concern accepted before prediction.",
+    "EVAL-024": "Near-paraphrase of coached repair/negated-target example; excluded before prediction."
+  },
+  "retained_count": 38,
+  "planned_count": 40,
+  "scope_notes": [
+    "Explicit allegedly unauthorised disposal into third-party/public containers is interpreted under the existing intended-disposal-arrangement definition, not a legal finding.",
+    "Prior-case status/reopen requests without underlying incident context remain unclear under the existing guide.",
+    "No guide/rule/prompt/model edits occurred during label review.",
+    "Only two concrete cross-split overlaps were removed; remaining semantic family overlap and repeated within-set scenarios limit independence. Full scenario-disjointness is not established.",
+    "Dataset author had development-result context. Blindness applies only to the model input and the instruction-based second-pass label review."
+  ]
+}
